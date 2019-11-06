@@ -1,0 +1,168 @@
+
+//-----------------------------------
+//basic styles
+//----------------------------------- 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0% 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    padding: 1em;
+}
+
+footer {
+    padding: 3em;
+    margin: 10px;
+}
+
+
+// -----------------------------------
+// Mobile
+// ----------------------------------- 
+
+.wrapper {
+    display: block;
+    padding-left: 3em;
+    margin: 10px;
+}
+
+
+
+
+// -----------------------------------
+// Medium & Wide
+// ----------------------------------- 
+
+@media (min-width:30em) {
+
+    // grid 1
+    .intro {
+        display: grid;
+        grid-template-areas: repeat(6, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .intro header {
+        grid-column: 2/ span 2;
+        grid-row: 1;
+        text-align: right;
+        padding: 3em;
+    }
+
+    .summary {
+        grid-column: 3 / span 3;
+        grid-row: 2;
+        text-align: right;
+        padding: 2em;
+
+    }
+
+    .preamble {
+        grid-column: 1/ span 4;
+        grid-row: 3;
+        padding: 2em;
+
+    }
+
+    // grid 2
+    #zen-supporting {
+        display: grid;
+        grid-template-areas: repeat(6, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .explanation {
+        grid-column: 3 / span 3;
+        grid-row: 1;
+        text-align: right;
+        padding: 2em;
+    }
+
+    .participation {
+        grid-column: 1/ span 4;
+        grid-row: 2;
+        padding: 2em;
+
+    }
+
+    .benefits {
+        grid-column: 3/ span 3;
+        text-align: right;
+        grid-row: 3;
+        padding: 2em;
+    }
+
+    .requirements {
+        grid-column: 1 / span 4;
+        grid-row: 4;
+        padding: 2em;
+
+    }
+
+    // footer
+    footer {
+        grid-column: 3/ span 3;
+        text-align: right;
+        grid-row: 5;
+
+    }
+
+    // sidebar
+    // grid 3
+    .sidebar {
+        font-size: smaller;
+
+    }
+
+    .sidebar p {
+        padding: 0;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-areas: repeat(8, 1fr);
+        grid-template-rows: auto;
+        padding-left: 3em;
+    }
+
+    .design-selection {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+
+
+    }
+
+    .design-archives {
+        grid-column: 3/ span 2;
+        grid-row: 1;
+
+
+    }
+
+    .zen-resources {
+        grid-column: 5/ span 2;
+        grid-row: 1;
+
+    }
+
+}
