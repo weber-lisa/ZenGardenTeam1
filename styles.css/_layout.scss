@@ -1,4 +1,8 @@
-
+//variables
+$line-height: 1.5;
+$margin-body: 10px;
+$padding-grid: 2em;
+$padding-body: 3em;
 //-----------------------------------
 //basic styles
 //----------------------------------- 
@@ -16,8 +20,8 @@ html {
 
 body {
     display: block;
-    line-height: 1.5;
-    margin-left: 10px;
+    line-height: $line-height;
+    margin-left: $margin-body;
 }
 
 ul {
@@ -29,8 +33,8 @@ p {
 }
 
 footer {
-    padding: 3em;
-    margin: 10px;
+    padding: $padding-body;
+    margin: $margin-body;
 }
 
 
@@ -40,8 +44,8 @@ footer {
 
 .wrapper {
     display: block;
-    padding-left: 3em;
-    margin: 10px;
+    padding-left: $padding-body;
+    margin: $margin-body;
 }
 
 
@@ -65,21 +69,21 @@ footer {
         grid-column: 2/ span 2;
         grid-row: 1;
         text-align: right;
-        padding: 3em;
+        padding: $padding-body;
     }
 
     .summary {
         grid-column: 3 / span 3;
         grid-row: 2;
         text-align: right;
-        padding: 2em;
+        padding: $padding-grid;
 
     }
 
     .preamble {
         grid-column: 1/ span 4;
         grid-row: 3;
-        padding: 2em;
+        padding: $padding-grid;
 
     }
 
@@ -95,13 +99,13 @@ footer {
         grid-column: 3 / span 3;
         grid-row: 1;
         text-align: right;
-        padding: 2em;
+        padding: $padding-grid;
     }
 
     .participation {
         grid-column: 1/ span 4;
         grid-row: 2;
-        padding: 2em;
+        padding: $padding-grid;
 
     }
 
@@ -109,13 +113,13 @@ footer {
         grid-column: 3/ span 3;
         text-align: right;
         grid-row: 3;
-        padding: 2em;
+        padding: $padding-grid;
     }
 
     .requirements {
         grid-column: 1 / span 4;
         grid-row: 4;
-        padding: 2em;
+        padding: $padding-grid;
 
     }
 
@@ -142,7 +146,7 @@ footer {
         display: grid;
         grid-template-areas: repeat(8, 1fr);
         grid-template-rows: auto;
-        padding-left: 3em;
+        padding-left: $padding-body;
     }
 
     .design-selection {
