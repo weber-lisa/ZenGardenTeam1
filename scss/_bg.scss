@@ -1,0 +1,25 @@
+// .intro header {
+//    background: rgb(103,179,237);
+//    background: linear-gradient(180deg, rgba(103,179,237,1) 0%, rgba(173,224,221,1) 56%, rgba(249,233,134,1) 100%);   width: 100vw;
+//    height: 300px;
+// }
+
+.page-wrapper {
+   background: rgb(3,14,113);
+   background: linear-gradient(356deg, rgba(3,14,113,1) 0%, rgba(39,76,187,1) 30%, rgba(0,212,255,1) 100%); 
+      width: 100vw;
+   // height: 100%;
+
+   &::after {
+      display:block;
+      width: 90%; 
+      // position: relative;
+      /* bottom: -120vh; */
+      left: 3%; 
+      /* right: -60vw;  */
+      background-image: url("./images/wide-whale.svg");
+      width: 500px;
+      height: 700px;
+      background-color: red;
+}
+}
