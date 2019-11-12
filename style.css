@@ -166,14 +166,14 @@ footer {
   left: 50vw;
 }
 
-body {
-  margin: 0;
-  width: 100%;
-}
-
 /* debugging */
 div {
   border: 1px solid lightgrey;
+}
+
+body {
+  margin: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
