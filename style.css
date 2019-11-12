@@ -17,15 +17,10 @@ html {
 body {
   display: block;
   line-height: 1.5;
-  margin-left: 10px;
 }
 
 ul {
   list-style-type: none;
-}
-
-p {
-  padding: 1em;
 }
 
 footer {
@@ -36,18 +31,18 @@ footer {
 .wrapper {
   display: block;
   padding-left: 3em;
-  margin: 10px;
 }
 
 @media (min-width: 30em) {
   .intro {
     display: grid;
-    grid-template-areas: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
+    margin: 10px;
   }
 
   .intro header {
-    grid-column: 2/span 2;
+    grid-column: 2/span 4;
     grid-row: 1;
     text-align: right;
     padding: 3em;
@@ -68,8 +63,9 @@ footer {
 
   #zen-supporting {
     display: grid;
-    grid-template-areas: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
+    margin: 10px;
   }
 
   .explanation {
@@ -114,7 +110,7 @@ footer {
 
   .wrapper {
     display: grid;
-    grid-template-areas: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     padding-left: 3em;
   }
@@ -169,11 +165,6 @@ footer {
 /* debugging */
 div {
   border: 1px solid lightgrey;
-}
-
-body {
-  margin: 0;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
