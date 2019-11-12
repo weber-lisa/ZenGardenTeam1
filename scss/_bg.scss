@@ -3,7 +3,6 @@ $horizon-y: 80vh;
 $boat-x: 20vw;
 
 .page-wrapper {
-
    background: rgba(103, 179, 237, 1);
    background: linear-gradient(180deg, rgba(103, 179, 237, 1) 0%, rgba(173, 224, 221, 1) 56%, rgba(249, 233, 134, 1) 100%),
       linear-gradient(356deg, rgba(3, 14, 113, 1) 0%, rgba(39, 76, 187, 1) 30%, rgba(0, 212, 255, 1) 100%);
@@ -13,41 +12,14 @@ $boat-x: 20vw;
    background-repeat: no-repeat, no-repeat;
 
    &::after {
+      content: "";
       display: block;
-      width: 500px;
-      height: 700px;
-      background-color: red;
-
-      // background-image: url("./images/wide-whale.svg");
-
-   }
-
-   // &::after {
-   //    display: block;
-   //    width: 90%;
-   //    // position: relative;
-   //    /* bottom: -120vh; */
-   //    left: 3%;
-   //    /* right: -60vw;  */
-   //    background-image: url("./images/wide-whale.svg");
-   //    width: 500px;
-   //    height: 700px;
-   //    background-color: red;
-   // }
-}
-
-.extra1 {
-   content: "extra #1";
-
-   display: block;
-   width: 500px;
-   height: 700px;
-   background-color: orange;
-   &::after {
-      content: "hi";
-      display: block;
-      width: 500px;
-      height: 700px;
-      background-color: pink;
+      background-image: url("./images/wide-whale.svg");
+      width: 80%;
+      height: 50vw;
+      position: relative;
+      left: 5%;
+      background-repeat: no-repeat;
+      background-size: contain;
    }
 }

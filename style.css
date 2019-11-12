@@ -142,23 +142,15 @@ footer {
   background-repeat: no-repeat, no-repeat;
 }
 .page-wrapper::after {
+  content: "";
   display: block;
-  width: 500px;
-  height: 700px;
-  background-color: red;
-}
-
-.extra1 {
-  display: block;
-  width: 500px;
-  height: 700px;
-  background-color: orange;
-}
-.extra1::after {
-  display: block;
-  width: 500px;
-  height: 700px;
-  background-color: purple;
+  background-image: url("./images/wide-whale.svg");
+  width: 80%;
+  height: 50vw;
+  position: relative;
+  left: 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* debugging */
