@@ -5,37 +5,35 @@
 // }
 
 .page-wrapper {
-   background-color: rgb(212, 155, 155);
-   /* joel */
+   // background-color: rgb(212, 155, 155);
 
-   background: linear-gradient(black, white), linear-gradient(orange, purple);
-  background-size: auto 80vh, auto calc(100% - 80vh);
-  background-position-y: top, 80vh;
-  background-repeat: no-repeat, no-repeat;
+
+   // background: linear-gradient(black, white), linear-gradient(orange, purple);
+   background-size: auto 80vh, auto calc(100% - 80vh);
+   background-position-y: top, 80vh;
+   background-repeat: no-repeat, no-repeat;
 }
 
-// .page-wrapper {
-//    background: rgb(3, 14, 113);
-//    background: linear-gradient(180deg, rgba(103, 179, 237, 1) 0%, rgba(173, 224, 221, 1) 56%, rgba(249, 233, 134, 1) 100%),
-//       linear-gradient(356deg, rgba(3, 14, 113, 1) 0%, rgba(39, 76, 187, 1) 30%, rgba(0, 212, 255, 1) 100%);
-//    background-position: top left,
-//       500px;
+.page-wrapper {
+   background: rgba(103, 179, 237, 1);
+   background: linear-gradient(180deg, rgba(103, 179, 237, 1) 0%, rgba(173, 224, 221, 1) 56%, rgba(249, 233, 134, 1) 100%),
+      linear-gradient(356deg, rgba(3, 14, 113, 1) 0%, rgba(39, 76, 187, 1) 30%, rgba(0, 212, 255, 1) 100%);
+   background-size: auto 80vh, auto calc(100% - 80vh);
+   background-position-y: top, 80vh;
+   background-repeat: no-repeat, no-repeat;
 
-//       background-size: 50%, 50%;
+   
 
-//    width: 100vw;
-//       // height: 100%;
-
-//    &::after {
-//       display: block;
-//       width: 90%;
-//       // position: relative;
-//       /* bottom: -120vh; */
-//       left: 3%;
-//       /* right: -60vw;  */
-//       background-image: url("./images/wide-whale.svg");
-//       width: 500px;
-//       height: 700px;
-//       background-color: red;
-//    }
-// }
+   // &::after {
+   //    display: block;
+   //    width: 90%;
+   //    // position: relative;
+   //    /* bottom: -120vh; */
+   //    left: 3%;
+   //    /* right: -60vw;  */
+   //    background-image: url("./images/wide-whale.svg");
+   //    width: 500px;
+   //    height: 700px;
+   //    background-color: red;
+   // }
+}
