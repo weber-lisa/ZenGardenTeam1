@@ -135,20 +135,11 @@ footer {
   }
 }
 .page-wrapper {
-  background: #030e71;
-  background: linear-gradient(356deg, #030e71 0%, #274cbb 30%, #00d4ff 100%);
-  width: 100vw;
-}
-.page-wrapper::after {
-  display: block;
-  width: 90%;
-  /* bottom: -120vh; */
-  left: 3%;
-  /* right: -60vw;  */
-  background-image: url("./images/wide-whale.svg");
-  width: 500px;
-  height: 700px;
-  background-color: red;
+  background-color: lime;
+  background: linear-gradient(black, white);
+  background: linear-gradient(orange, purple);
+  background-size: auto 80vh, auto calc(100% - 80vh);
+  background-position: top left, bottom left;
 }
 
 /* debugging */
