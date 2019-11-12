@@ -135,12 +135,6 @@ footer {
   }
 }
 .page-wrapper {
-  background-size: auto 80vh, auto calc(100% - 80vh);
-  background-position-y: top, 80vh;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.page-wrapper {
   background: #67b3ed;
   background: linear-gradient(180deg, #67b3ed 0%, #ade0dd 56%, #f9e986 100%), linear-gradient(356deg, #030e71 0%, #274cbb 30%, #00d4ff 100%);
   background-size: auto 80vh, auto calc(100% - 80vh);
