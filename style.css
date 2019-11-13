@@ -1,5 +1,63 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Lobster|Nunito:400,700,900&display=swap");
+/* -------------------------------- 
+
+xColors
+
+-------------------------------- */
+/* -------------------------------- 
+
+xTypography
+
+-------------------------------- */
+header h1 {
+  font-family: "Nunito", sans-serif;
+  color: #66C4D9;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-family: "Lobster", cursive;
+  color: #275059;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.summary {
+  margin-bottom: 3rem;
+}
+.summary p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
   color: white;
+}
+.summary p a {
+  color: #66C4D9;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  color: #275059;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+p a {
+  color: #66C4D9;
+  text-decoration: underline;
 }
 
 html {

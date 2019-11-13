@@ -1,8 +1,9 @@
 // This is the master SCSS file for our WDD331 Group1 Zen Garden Project
+@import url('https://fonts.googleapis.com/css?family=Lobster|Nunito:400,700,900&display=swap');
 
 @import 'util';
-@import 'typography';
 @import 'color';
+@import 'typography';
 @import 'layout';
 @import 'bg';
 
