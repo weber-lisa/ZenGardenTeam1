@@ -2,7 +2,8 @@
 $horizon-y: 80vh;
 $boat-x: 20vw;
 
-.page-wrapper {
+// .page-wrapper {
+   body {
    background: rgba(103, 179, 237, 1);
    background: linear-gradient(180deg, rgba(103, 179, 237, 1) 0%, rgba(173, 224, 221, 1) 56%, rgba(249, 233, 134, 1) 100%),
       linear-gradient(356deg, rgba(3, 14, 113, 1) 0%, rgba(39, 76, 187, 1) 30%, rgba(0, 212, 255, 1) 100%);
@@ -24,7 +25,27 @@ $boat-x: 20vw;
    }
 }
 
-.intro {
+// .intro {
+//    &::before {
+//       content: "";
+//       background-image: url("./images/fisherman.svg");
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//       display: block;
+//       height: 150px;
+//       width: 500px;
+//       position: relative;
+
+//       bottom: calc(94px - #{$horizon-y});
+//       // position: absolute;
+//       // bottom: 10px;
+//       left: 50vw;
+//    }
+// }
+
+body {
+   position: relative;
+
    &::before {
       content: "";
       background-image: url("./images/fisherman.svg");
@@ -32,10 +53,18 @@ $boat-x: 20vw;
       background-size: contain;
       display: block;
       height: 150px;
-      width: 500px;
-      position: relative;
-      bottom: calc(87px - #{$horizon-y});
-      left: 50vw;
+      width: 150px;
+      position: absolute;
+      right: 17vw;
+      top: calc(#{$horizon-y} - 85px);
+      transform: scaleX(-1);
+    filter: FlipH;
    }
 }
 
+
+@media (min-width: 30em) {
+   .intro {
+      margin: 1vw;
+   }
+}

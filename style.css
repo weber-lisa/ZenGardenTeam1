@@ -188,14 +188,14 @@ footer {
     grid-row: 1;
   }
 }
-.page-wrapper {
+body {
   background: #67b3ed;
   background: linear-gradient(180deg, #67b3ed 0%, #ade0dd 56%, #f9e986 100%), linear-gradient(356deg, #030e71 0%, #274cbb 30%, #00d4ff 100%);
   background-size: 100% 80vh, auto calc(100% - 80vh);
   background-position-y: top, 80vh;
   background-repeat: no-repeat, no-repeat;
 }
-.page-wrapper::after {
+body::after {
   content: "";
   display: block;
   background-image: url("./images/wide-whale.svg");
@@ -207,22 +207,91 @@ footer {
   background-size: contain;
 }
 
-.intro::before {
+body {
+  position: relative;
+}
+body::before {
   content: "";
   background-image: url("./images/fisherman.svg");
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
   height: 150px;
-  width: 500px;
-  position: relative;
-  bottom: calc(87px - 80vh);
-  left: 50vw;
+  width: 150px;
+  position: absolute;
+  right: 17vw;
+  top: calc(80vh - 85px);
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 
+@media (min-width: 30em) {
+  .intro {
+    margin: 1vw;
+  }
+}
 /* debugging */
 div {
-  border: 1px solid lightgrey;
+  border: 1px solid red;
+}
+
+::before,
+.intro {
+  border: 1px solid black;
+}
+
+header h1 {
+  color: #275059;
+}
+
+@media (min-width: 30em) {
+  .page-wrapper {
+    position: relative;
+    top: 100vh;
+  }
+
+  .intro {
+    margin: 0;
+  }
+  .intro header {
+    padding: 0;
+  }
+  .intro header h1 {
+    font-size: 3vw;
+  }
+  .intro header h2 {
+    font-size: 6vw;
+  }
+
+  .summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.footer,
+.sidebar,
+.wrapper,
+#zen-supporting {
+    padding: 0;
+    margin: 0;
+  }
+
+  .preamble,
+.participation,
+.requirements,
+.sidebar,
+.wrapper {
+    padding: 10px;
+    margin: 2vw;
+  }
+}
+root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

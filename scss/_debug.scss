@@ -1,5 +1,74 @@
 /* debugging */
+
 div {
-   border: 1px solid lightgrey;
+   border: 1px solid red;
 }
 
+::before,
+.intro {
+   border: 1px solid black;
+}
+
+header h1 {
+   color: $color-1;
+}
+
+@media (min-width: 30em) {
+   .page-wrapper {
+      position: relative;
+      top: 100vh;
+   }
+   
+   .intro {
+      margin: 0;
+      // position: relative;
+      // top: 100vh;
+
+      header {
+         padding: 0;
+         position : absolute;
+         top: 0;
+
+         h1 {
+            font-size: 3vw;
+         }
+
+         h2 {
+            font-size: 6vw;
+         }
+      }
+   }
+
+   .summary,
+   .preamble,
+   .explanation,
+   .participation,
+   .benefits,
+   .requirements,
+   .footer,
+   .sidebar,
+   .wrapper,
+   #zen-supporting {
+      padding: 0;
+      margin: 0;
+   }
+
+   .preamble,
+   .participation,
+   .requirements,
+   .sidebar,
+   .wrapper {
+      padding: 10px;
+      margin: 2vw;
+   }
+
+
+}
+
+root {
+   font-size: 10px;
+}
+
+body {
+   font-size: 1.6rem;
+}
