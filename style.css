@@ -255,6 +255,9 @@ header h1 {
   }
   .intro header {
     padding: 0;
+    position: absolute;
+    top: -100vh;
+    right: 17vw;
   }
   .intro header h1 {
     font-size: 3vw;
