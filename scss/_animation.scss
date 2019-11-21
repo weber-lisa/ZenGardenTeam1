@@ -1,0 +1,16 @@
+.summary,
+.preamble {
+   animation-name: pageload;
+   animation-duration: 6s;
+
+}
+
+@keyframes pageload {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
