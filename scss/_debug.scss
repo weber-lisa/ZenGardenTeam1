@@ -54,6 +54,12 @@ header h1 {
 
 }
 
+// watery text shadow - prototype
+.summary p,
+.preamble p {
+  text-shadow: 0px 5px 10px rgba(57,54,255,0.5);
+}
+
 root {
    font-size: 10px;
 }
