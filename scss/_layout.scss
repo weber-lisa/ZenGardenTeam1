@@ -53,13 +53,53 @@ footer {
 // -----------------------------------
 // Medium & Wide
 // ----------------------------------- 
+@media (min-width: 30em) {
+    .page-wrapper {
+       position: relative;
+       top: 85vh;
+    }
+    
+    .intro {
+       margin: 0;
+       // position: relative;
+       // top: 100vh;
+ 
+       header {
+          padding: 0;
+          position : absolute;
+          top: -75vh;
+          right: 17vw;
+ 
+          h1 {
+             font-size: 3vw;
+          }
+ 
+          h2 {
+             font-size: 6vw;
+          }
+       }
+    }
+ 
+    
+ 
+    .preamble,
+    .participation,
+    .requirements,
+    .sidebar,
+    .wrapper {
+       padding: 10px;
+       margin: 2vw;
+    }
+ 
+ 
+ }
 
 @media (min-width:30em) {
 
     // grid 1
     .intro {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
      
         
@@ -72,7 +112,7 @@ footer {
     }
 
     .summary {
-        grid-column: 3 / span 3;
+        grid-column: 8 / span 3;
         grid-row: 2;
         text-align: right;
         
@@ -88,38 +128,38 @@ footer {
     // grid 2
     #zen-supporting {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
 
     }
 
     .explanation {
-        grid-column: 3 / span 3;
+        grid-column: -5/ span 3;
         grid-row: 1;
         text-align: right;
     }
 
     .participation {
-        grid-column: 1/ span 4;
+        grid-column: 3/ span 4;
         grid-row: 2;
 
     }
 
     .benefits {
-        grid-column: 3/ span 3;
+        grid-column: -6/ span 3;
         text-align: right;
         grid-row: 3;
     }
 
     .requirements {
-        grid-column: 1 / span 4;
+        grid-column: 2/ span 4;
         grid-row: 4;
 
     }
 
     // footer
     footer {
-        grid-column: 3/ span 3;
+        grid-column: 10/ span 3;
         text-align: right;
         grid-row: 5;
 
@@ -138,7 +178,7 @@ footer {
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
         
     }
@@ -151,14 +191,14 @@ footer {
     }
 
     .design-archives {
-        grid-column: 3/ span 2;
+        grid-column: 5/ span 2;
         grid-row: 1;
 
 
     }
 
     .zen-resources {
-        grid-column: 5/ span 2;
+        grid-column: 10/ span 2;
         grid-row: 1;
 
     }

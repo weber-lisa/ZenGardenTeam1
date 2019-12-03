@@ -13,46 +13,7 @@ header h1 {
    color: $color-1;
 }
 
-@media (min-width: 30em) {
-   .page-wrapper {
-      position: relative;
-      top: 85vh;
-   }
-   
-   .intro {
-      margin: 0;
-      // position: relative;
-      // top: 100vh;
 
-      header {
-         padding: 0;
-         position : absolute;
-         top: -75vh;
-         right: 17vw;
-
-         h1 {
-            font-size: 3vw;
-         }
-
-         h2 {
-            font-size: 6vw;
-         }
-      }
-   }
-
-   
-
-   .preamble,
-   .participation,
-   .requirements,
-   .sidebar,
-   .wrapper {
-      padding: 10px;
-      margin: 2vw;
-   }
-
-
-}
 
 // watery text shadow - prototype
 .summary p,
