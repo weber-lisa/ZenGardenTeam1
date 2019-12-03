@@ -61,28 +61,27 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
-        margin: $margin-body;
+     
+        
     }
 
     .intro header {
         grid-column: 2/ span 4;
         grid-row: 1;
         text-align: right;
-        padding: $padding-body;
     }
 
     .summary {
         grid-column: 3 / span 3;
         grid-row: 2;
         text-align: right;
-        padding: $padding-grid;
+        
 
     }
 
     .preamble {
         grid-column: 1/ span 4;
         grid-row: 3;
-        padding: $padding-grid;
 
     }
 
@@ -91,7 +90,6 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
-        margin: $margin-body;
 
     }
 
@@ -99,13 +97,11 @@ footer {
         grid-column: 3 / span 3;
         grid-row: 1;
         text-align: right;
-        padding: $padding-grid;
     }
 
     .participation {
         grid-column: 1/ span 4;
         grid-row: 2;
-        padding: $padding-grid;
 
     }
 
@@ -113,13 +109,11 @@ footer {
         grid-column: 3/ span 3;
         text-align: right;
         grid-row: 3;
-        padding: $padding-grid;
     }
 
     .requirements {
         grid-column: 1 / span 4;
         grid-row: 4;
-        padding: $padding-grid;
 
     }
 
@@ -146,7 +140,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
-        padding-left: $padding-body;
+        
     }
 
     .design-selection {
