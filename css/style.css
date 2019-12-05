@@ -13,9 +13,10 @@ html {
   margin: 0;
 }
 
-body {
+.page-wrapper {
   display: block;
-  line-height: 1.5;
+  padding: 3rem;
+  border: solid blueviolet;
 }
 
 ul {
@@ -29,7 +30,8 @@ footer {
 
 .page-wrapper {
   display: block;
-  padding: 1.3rem;
+  padding: 3rem;
+  color: black;
 }
 
 @media (min-width: 30em) {
@@ -238,8 +240,8 @@ p a {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #b3d4ff), to(#ffd699)), -webkit-gradient(linear, left top, left bottom, from(#4da6ff), to(#003366));
-  background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
+  background: #67b3ed;
+  background: linear-gradient(180deg, #67b3ed 0%, #ade0dd 56%, #f9e986 100%), linear-gradient(356deg, #030e71 0%, #274cbb 30%, #00d4ff 100%);
   background-size: 100% 80vh, auto calc(100% - 80vh);
   background-position-y: top, 80vh;
   background-repeat: no-repeat, no-repeat;

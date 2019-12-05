@@ -6,13 +6,19 @@ xColors
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #275059; // Heading / Water (Deep)
-$color-2: #66C4D9; // Water (Shallow)
-$color-3: #D8F0F2; // Sky
+//Ocean (Shallow to Deep)
+$water-1: #4da6ff;
+$water-2: #003366;
+
+//Sky Color
+$sky-1: #b3d4ff;
+$sky-2: #ffd699;
+
+$color-1: #275059; // Heading 1
+$color-2: #66C4D9; // Heading 2
+$color-3: white;
 $color-4: #3F3F3F; // Body Color (for light BG)
-$color-5: #FF9D18; // Accent Color
 
 // additional colors
-
 $success: #6fce72; // green
 $alert: #e4655f; // red
