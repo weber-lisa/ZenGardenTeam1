@@ -44,8 +44,37 @@ footer {
 .page-wrapper {
     display: block;
     padding: 1.3rem;
-    
 }
+
+.intro { margin-top: 4rem; }
+.summary p:last-child { display: none; }
+
+.preamble { margin-bottom: 5rem; }
+.main {
+    > div {
+        margin-bottom: 5rem;
+        h3 { color: #ffcc00; }
+    }
+    footer {
+        margin-bottom: 5rem;
+    }
+}
+
+.wrapper div h3 { display: none; }
+.wrapper div:nth-child(2) { display: none; }
+
+nav {
+  li {
+    color: white;
+    border-bottom: solid gray .5px;
+    padding: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 
 // -----------------------------------
 // Medium & Wide
@@ -91,7 +120,7 @@ footer {
  
  }
 
-@media (min-width:30em) {
+@media (min-width: 30em) {
 
     // grid 1
     .intro {

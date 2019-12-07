@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Nunito:400,700,900&display=swap");
+/* -------------------------------- 
+
+xColors
+
+-------------------------------- */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,6 +35,49 @@ footer {
 .page-wrapper {
   display: block;
   padding: 1.3rem;
+}
+
+.intro {
+  margin-top: 4rem;
+}
+
+.summary p:last-child {
+  display: none;
+}
+
+.preamble {
+  margin-bottom: 5rem;
+}
+
+.main > div {
+  margin-bottom: 5rem;
+}
+
+.main > div h3 {
+  color: #ffcc00;
+}
+
+.main footer {
+  margin-bottom: 5rem;
+}
+
+.wrapper div h3 {
+  display: none;
+}
+
+.wrapper div:nth-child(2) {
+  display: none;
+}
+
+nav li {
+  color: white;
+  border-bottom: solid gray .5px;
+  padding: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 30em) {
@@ -175,18 +223,13 @@ footer {
 
 /* -------------------------------- 
 
-xColors
-
--------------------------------- */
-/* -------------------------------- 
-
 xTypography
 
 -------------------------------- */
 header h1 {
   font-family: "Nunito", sans-serif;
   color: #66C4D9;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -194,19 +237,23 @@ header h1 {
 header h2 {
   font-family: "Lobster", cursive;
   color: #275059;
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1.1;
-  margin: .5rem 0 2rem 0;
+  margin: 0 0 2rem 0;
+}
+
+abbr {
+  text-decoration: none;
 }
 
 .summary {
-  margin-bottom: 3rem;
+  margin-bottom: 17rem;
 }
 
 .summary p {
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
-  line-height: 1.4;
+  line-height: 1.7rem;
   color: white;
 }
 
@@ -222,11 +269,12 @@ h3 {
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: white;
   margin-bottom: .5rem;
@@ -237,11 +285,30 @@ p a {
   text-decoration: underline;
 }
 
+.wrapper div h3 {
+  display: none;
+}
+
+.wrapper div:nth-child(2) {
+  display: none;
+}
+
+ul li {
+  color: white;
+  border-bottom: solid gray .5px;
+  padding: 1rem;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #b3d4ff), to(#ffd699)), -webkit-gradient(linear, left top, left bottom, from(#4da6ff), to(#003366));
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 80vh, auto calc(100% - 80vh);
-  background-position-y: top, 80vh;
+  background-size: 100% 90vh, auto calc(100% - 90vh);
+  background-position-y: top, 90vh;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -271,7 +338,7 @@ body::before {
   width: 150px;
   position: absolute;
   right: 17vw;
-  top: calc(80vh - 85px);
+  top: calc(90vh - 85px);
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   -webkit-filter: FlipH;
