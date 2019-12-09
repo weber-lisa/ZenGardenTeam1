@@ -256,8 +256,8 @@ p a {
 
 body {
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 90vh, auto calc(100% - 90vh);
-  background-position-y: top, 90vh;
+  background-size: 100% 80vh, auto calc(100% - 80vh);
+  background-position-y: top, 80vh;
   background-repeat: no-repeat, no-repeat;
 }
 body::after {
@@ -286,7 +286,7 @@ body::before {
   width: 150px;
   position: absolute;
   right: 17vw;
-  top: calc(90vh - 85px);
+  top: calc(80vh - 85px);
   transform: scaleX(-1);
   filter: FlipH;
 }
