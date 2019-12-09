@@ -71,11 +71,24 @@ footer {
 
 nav li {
   color: white;
-  border-bottom: solid gray .5px;
-  padding: 2rem;
+  border-bottom: solid white .5px;
+  padding: 1.3rem;
 }
 
 nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.zen-resources {
+  background-color: rgba(250, 250, 250, 0.05);
+}
+
+.zen-resources li {
+  padding: 1rem;
+}
+
+.zen-resources a {
   text-decoration: none;
   color: white;
 }
@@ -283,25 +296,6 @@ p {
 p a {
   color: #66C4D9;
   text-decoration: underline;
-}
-
-.wrapper div h3 {
-  display: none;
-}
-
-.wrapper div:nth-child(2) {
-  display: none;
-}
-
-ul li {
-  color: white;
-  border-bottom: solid gray .5px;
-  padding: 1rem;
-}
-
-ul a {
-  text-decoration: none;
-  color: white;
 }
 
 body {

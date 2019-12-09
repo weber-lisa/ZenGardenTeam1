@@ -22,14 +22,11 @@ html {
 body {
     display: block;
     line-height: $line-height;
-    
 }
 
 ul {
     list-style-type: none;
 }
-
-
 
 footer {
     padding: $padding-body;
@@ -64,15 +61,26 @@ footer {
 .wrapper div:nth-child(2) { display: none; }
 
 nav {
-  li {
-    color: white;
-    border-bottom: solid gray .5px;
-    padding: 2rem;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
+    li {
+        color: white;
+        border-bottom: solid white .5px;
+        padding: 1.3rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.zen-resources {
+    background-color: rgba(250, 250, 250, 0.05);
+    li {
+        padding: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 
