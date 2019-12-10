@@ -22,11 +22,14 @@ html {
 body {
     display: block;
     line-height: $line-height;
+    
 }
 
 ul {
     list-style-type: none;
 }
+
+
 
 footer {
     padding: $padding-body;
@@ -38,50 +41,13 @@ footer {
 // Mobile
 // ----------------------------------- 
 
-.page-wrapper {
+.wrapper {
     display: block;
-    padding: 1.3rem;
+    padding-left: $padding-body;
+    
 }
 
-.intro { margin-top: 4rem; }
-.summary p:last-child { display: none; }
 
-.preamble { margin-bottom: 5rem; }
-.main {
-    > div {
-        margin-bottom: 5rem;
-        h3 { color: #ffcc00; }
-    }
-    footer {
-        margin-bottom: 5rem;
-    }
-}
-
-.wrapper div h3 { display: none; }
-.wrapper div:nth-child(2) { display: none; }
-
-nav {
-    li {
-        color: white;
-        border-bottom: solid white .5px;
-        padding: 1.3rem;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-.zen-resources {
-    background-color: rgba(250, 250, 250, 0.05);
-    li {
-        padding: 1rem;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
 
 
 // -----------------------------------
@@ -128,7 +94,7 @@ nav {
  
  }
 
-@media (min-width: 30em) {
+@media (min-width:30em) {
 
     // grid 1
     .intro {

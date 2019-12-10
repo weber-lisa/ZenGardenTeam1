@@ -5,15 +5,13 @@ xColors
 
 -------------------------------- */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   padding: 0% 0;
   margin: 0;
 }
@@ -32,65 +30,9 @@ footer {
   margin: 10px;
 }
 
-.page-wrapper {
+.wrapper {
   display: block;
-  padding: 1.3rem;
-}
-
-.intro {
-  margin-top: 4rem;
-}
-
-.summary p:last-child {
-  display: none;
-}
-
-.preamble {
-  margin-bottom: 5rem;
-}
-
-.main > div {
-  margin-bottom: 5rem;
-}
-
-.main > div h3 {
-  color: #ffcc00;
-}
-
-.main footer {
-  margin-bottom: 5rem;
-}
-
-.wrapper div h3 {
-  display: none;
-}
-
-.wrapper div:nth-child(2) {
-  display: none;
-}
-
-nav li {
-  color: white;
-  border-bottom: solid white .5px;
-  padding: 1.3rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.zen-resources {
-  background-color: rgba(250, 250, 250, 0.05);
-}
-
-.zen-resources li {
-  padding: 1rem;
-}
-
-.zen-resources a {
-  text-decoration: none;
-  color: white;
+  padding-left: 3em;
 }
 
 @media (min-width: 30em) {
@@ -98,6 +40,7 @@ nav a {
     position: relative;
     top: 85vh;
   }
+
   .intro {
     margin: 0;
   }
@@ -113,127 +56,103 @@ nav a {
   .intro header h2 {
     font-size: 6vw;
   }
+
   .preamble,
-  .participation,
-  .requirements,
-  .sidebar,
-  .wrapper {
+.participation,
+.requirements,
+.sidebar,
+.wrapper {
     padding: 10px;
     margin: 2vw;
   }
 }
-
 @media (min-width: 30em) {
   .intro {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
   }
+
   .intro header {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-    grid-column: 2/ span 4;
-    -ms-grid-row: 1;
+    grid-column: 2/span 4;
     grid-row: 1;
     text-align: right;
   }
+
   .summary {
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 3;
-    grid-column: 8 / span 3;
-    -ms-grid-row: 2;
+    grid-column: 8/span 3;
     grid-row: 2;
     text-align: right;
   }
+
   .preamble {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/ span 4;
-    -ms-grid-row: 3;
+    grid-column: 1/span 4;
     grid-row: 3;
   }
+
   #zen-supporting {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
   }
+
   .explanation {
-    grid-column: -5/ span 3;
-    -ms-grid-row: 1;
+    grid-column: -5/span 3;
     grid-row: 1;
     text-align: right;
   }
+
   .participation {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
-    grid-column: 3/ span 4;
-    -ms-grid-row: 2;
+    grid-column: 3/span 4;
     grid-row: 2;
   }
+
   .benefits {
-    grid-column: -6/ span 3;
+    grid-column: -6/span 3;
     text-align: right;
-    -ms-grid-row: 3;
     grid-row: 3;
   }
+
   .requirements {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-    grid-column: 2/ span 4;
-    -ms-grid-row: 4;
+    grid-column: 2/span 4;
     grid-row: 4;
   }
+
   footer {
-    -ms-grid-column: 10;
-    -ms-grid-column-span: 3;
-    grid-column: 10/ span 3;
+    grid-column: 10/span 3;
     text-align: right;
-    -ms-grid-row: 5;
     grid-row: 5;
   }
+
   .sidebar {
     font-size: smaller;
   }
+
   .sidebar p {
     padding: 0;
   }
+
   .wrapper {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
   }
+
   .design-selection {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/ span 2;
-    -ms-grid-row: 1;
+    grid-column: 1/span 2;
     grid-row: 1;
   }
+
   .design-archives {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-    grid-column: 5/ span 2;
-    -ms-grid-row: 1;
+    grid-column: 5/span 2;
     grid-row: 1;
   }
+
   .zen-resources {
-    -ms-grid-column: 10;
-    -ms-grid-column-span: 2;
-    grid-column: 10/ span 2;
-    -ms-grid-row: 1;
+    grid-column: 10/span 2;
     grid-row: 1;
   }
 }
-
 /* -------------------------------- 
 
 xTypography
@@ -262,14 +181,12 @@ abbr {
 .summary {
   margin-bottom: 17rem;
 }
-
 .summary p {
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7rem;
   color: white;
 }
-
 .summary p a {
   color: #66C4D9;
   text-decoration: underline;
@@ -290,22 +207,19 @@ p {
   font-size: 1rem;
   line-height: 1.4;
   color: white;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 p a {
   color: #66C4D9;
   text-decoration: underline;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #b3d4ff), to(#ffd699)), -webkit-gradient(linear, left top, left bottom, from(#4da6ff), to(#003366));
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
   background-size: 100% 90vh, auto calc(100% - 90vh);
   background-position-y: top, 90vh;
   background-repeat: no-repeat, no-repeat;
 }
-
 body::after {
   content: "";
   display: block;
@@ -321,7 +235,6 @@ body::after {
 body {
   position: relative;
 }
-
 body::before {
   content: "";
   background-image: url("./images/fisherman.svg");
@@ -333,10 +246,8 @@ body::before {
   position: absolute;
   right: 17vw;
   top: calc(90vh - 85px);
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-filter: FlipH;
-          filter: FlipH;
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 
 @media (min-width: 30em) {
@@ -344,22 +255,10 @@ body::before {
     margin: 1vw;
   }
 }
-
 .summary,
 .preamble {
-  -webkit-animation-name: pageload;
-          animation-name: pageload;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-}
-
-@-webkit-keyframes pageload {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation-name: pageload;
+  animation-duration: 6s;
 }
 
 @keyframes pageload {
@@ -370,4 +269,5 @@ body::before {
     opacity: 1;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
