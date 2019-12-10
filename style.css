@@ -256,7 +256,7 @@ p a {
 
 body {
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 80vh, auto calc(100% - 80vh + $page-y-drop);
+  background-size: 100% 80vh, auto calc(100% - 80vh + 85vh);
   background-position-y: top, 80vh;
   background-repeat: no-repeat, no-repeat;
 }

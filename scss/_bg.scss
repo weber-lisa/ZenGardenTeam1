@@ -7,7 +7,7 @@ $page-y-drop: 85vh;
 body {
    background: linear-gradient($sky-1 30%, $sky-2), linear-gradient($water-1, $water-2);
    background-size: 100% $horizon-y,
-                     auto calc(100% - #{$horizon-y} + $page-y-drop);
+                     auto calc(100% - #{$horizon-y} + #{$page-y-drop});
    background-position-y: top, $horizon-y;
    background-repeat: no-repeat, no-repeat;
 
