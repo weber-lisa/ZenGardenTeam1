@@ -26,35 +26,23 @@ ul {
 }
 
 footer {
-  padding: 3em;
-  margin: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.page-wrapper {
-  display: block;
-  padding: 1.3rem;
-}
-
-.intro {
-  margin-top: 4rem;
+header {
+  padding: 0;
 }
 
 .summary p:last-child {
   display: none;
 }
 
-.preamble {
-  margin-bottom: 5rem;
-}
-
-.main > div {
-  margin-bottom: 5rem;
-}
 .main > div h3 {
   color: #ffcc00;
 }
-.main footer {
-  margin-bottom: 5rem;
+.main footer a {
+  padding-right: 1rem;
 }
 
 .wrapper div h3 {
@@ -68,7 +56,7 @@ footer {
 nav li {
   color: white;
   border-bottom: solid gray 0.5px;
-  padding: 2rem;
+  padding: 1rem 0;
 }
 nav a {
   text-decoration: none;
@@ -76,19 +64,8 @@ nav a {
 }
 
 @media (min-width: 30em) {
-  .page-wrapper {
-    position: relative;
-    top: 85vh;
-  }
-
   .intro {
     margin: 0;
-  }
-  .intro header {
-    padding: 0;
-    position: absolute;
-    top: -75vh;
-    right: 17vw;
   }
   .intro header h1 {
     font-size: 3vw;
@@ -96,14 +73,12 @@ nav a {
   .intro header h2 {
     font-size: 6vw;
   }
-
-  .preamble,
-.participation,
-.requirements,
-.sidebar,
-.wrapper {
-    padding: 10px;
-    margin: 2vw;
+}
+@media (max-width: 30em) {
+  .intro,
+.main,
+.sidebar {
+    margin: 1rem;
   }
 }
 @media (min-width: 30em) {
@@ -111,6 +86,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    text-align: center;
   }
 
   .intro header {
@@ -122,11 +98,10 @@ nav a {
   .summary {
     grid-column: 8/span 3;
     grid-row: 2;
-    text-align: right;
   }
 
   .preamble {
-    grid-column: 1/span 4;
+    grid-column: 2/span 4;
     grid-row: 3;
   }
 
@@ -134,12 +109,12 @@ nav a {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    text-align: center;
   }
 
   .explanation {
     grid-column: -5/span 3;
     grid-row: 1;
-    text-align: right;
   }
 
   .participation {
@@ -149,7 +124,6 @@ nav a {
 
   .benefits {
     grid-column: -6/span 3;
-    text-align: right;
     grid-row: 3;
   }
 
@@ -159,8 +133,8 @@ nav a {
   }
 
   footer {
-    grid-column: 10/span 3;
-    text-align: right;
+    grid-column: 2/span 10;
+    text-align: center;
     grid-row: 5;
   }
 
@@ -179,7 +153,7 @@ nav a {
   }
 
   .design-selection {
-    grid-column: 1/span 2;
+    grid-column: 2/span 6;
     grid-row: 1;
   }
 
@@ -189,8 +163,9 @@ nav a {
   }
 
   .zen-resources {
-    grid-column: 10/span 2;
+    grid-column: 9/span 3;
     grid-row: 1;
+    text-align: right;
   }
 }
 /* -------------------------------- 
@@ -255,29 +230,19 @@ p a {
 }
 
 body {
+  position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
   background-size: 100% 80vh, auto calc(100% - 80vh + 85vh);
   background-position-y: top, 80vh;
   background-repeat: no-repeat, no-repeat;
 }
-body::after {
-  content: "";
+
+.page-wrapper {
   display: block;
   position: relative;
-  background-image: url("./images/vertical-whale.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 97vw;
-  left: 5%;
   top: 85vh;
-  transform: scaleX(-1);
 }
-
-body {
-  position: relative;
-}
-body::before {
+.page-wrapper::before {
   content: "";
   display: block;
   position: absolute;
@@ -287,29 +252,45 @@ body::before {
   width: 150px;
   height: 150px;
   right: 17vw;
-  top: calc(80vh - 85px);
+  top: calc(-5vh - 85px);
   transform: scaleX(-1);
   filter: FlipH;
 }
+.page-wrapper::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-image: url("./images/vertical-whale.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 97vw;
+  left: 5%;
+  transform: scaleX(-1);
+}
 
-@media (min-width: 30em) {
-  body::after {
+@media (min-width: 40em) {
+  .page-wrapper::after {
     content: "";
     display: block;
     position: relative;
     background-image: url("./images/wide-whale.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 80%;
+    width: 100%;
     height: 50vw;
-    left: 5%;
+    left: 2%;
     transform: scaleX(1);
   }
-
-  .intro {
-    margin: 1vw;
-  }
 }
+header {
+  position: absolute;
+  top: -70 vh;
+  right: 17vw;
+  text-align: right;
+  padding-left: 0.5em;
+}
+
 .summary,
 .preamble {
   animation-name: pageload;
@@ -323,6 +304,32 @@ body::before {
   to {
     opacity: 1;
   }
+}
+/* debugging */
+div {
+  border: 1px solid red;
+}
+
+::before,
+.intro {
+  border: 1px solid black;
+}
+
+header h1 {
+  color: #275059;
+}
+
+.summary p,
+.preamble p {
+  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
+}
+
+root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

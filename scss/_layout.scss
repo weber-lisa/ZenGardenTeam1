@@ -1,8 +1,11 @@
 //variables
 $line-height: 1.5;
-$margin-body: 10px;
-$padding-grid: 2em;
-$padding-body: 3em;
+$margin-body: 0;
+// $margin-body: 10px;
+$padding-grid: 0;
+$padding-body: 0;
+// $padding-grid: 2em;
+// $padding-body: 3em;
 
 //-----------------------------------
 //basic styles
@@ -40,23 +43,28 @@ footer {
 // -----------------------------------
 // Mobile
 // ----------------------------------- 
-
 .page-wrapper {
-    display: block;
-    padding: 1.3rem;
-}
+    // padding: 1.3rem;
+ }
 
-.intro { margin-top: 4rem; }
+ header {
+    padding: 0;
+ }
+
+// .intro { margin-top: 4rem; }
 .summary p:last-child { display: none; }
 
-.preamble { margin-bottom: 5rem; }
+// .preamble { margin-bottom: 5rem; }
 .main {
     > div {
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
         h3 { color: #ffcc00; }
     }
     footer {
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
+        a {
+            padding-right: 1rem;
+        }
     }
 }
 
@@ -67,7 +75,7 @@ nav {
   li {
     color: white;
     border-bottom: solid gray .5px;
-    padding: 2rem;
+    padding: 1rem 0;
   }
   a {
     text-decoration: none;
@@ -80,10 +88,6 @@ nav {
 // Medium & Wide
 // ----------------------------------- 
 @media (min-width: 30em) {
-    .page-wrapper {
-       position: relative;
-       top: 85vh;
-    }
     
     .intro {
        margin: 0;
@@ -91,10 +95,10 @@ nav {
        // top: 100vh;
  
        header {
-          padding: 0;
-          position : absolute;
-          top: -75vh;
-          right: 17vw;
+        //   padding: 0;
+        //   position : absolute;
+        //   top: -75vh;
+        //   right: 17vw;
  
           h1 {
              font-size: 3vw;
@@ -113,11 +117,20 @@ nav {
     .requirements,
     .sidebar,
     .wrapper {
-       padding: 10px;
-       margin: 2vw;
+    //    padding: 10px;
+    //    margin: 2vw;
     }
  
  
+ }
+
+ @media (max-width: 30em) {
+     .intro,
+     .main,
+     .sidebar {
+         margin: 1rem;
+     }
+
  }
 
 @media (min-width: 30em) {
@@ -127,8 +140,7 @@ nav {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
-     
-        
+        text-align: center;
     }
 
     .intro header {
@@ -140,15 +152,12 @@ nav {
     .summary {
         grid-column: 8 / span 3;
         grid-row: 2;
-        text-align: right;
-        
-
+        // text-align: center;
     }
 
     .preamble {
-        grid-column: 1/ span 4;
+        grid-column: 2/ span 4;
         grid-row: 3;
-
     }
 
     // grid 2
@@ -156,13 +165,12 @@ nav {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
-
+        text-align: center;
     }
 
     .explanation {
         grid-column: -5/ span 3;
         grid-row: 1;
-        text-align: right;
     }
 
     .participation {
@@ -173,20 +181,18 @@ nav {
 
     .benefits {
         grid-column: -6/ span 3;
-        text-align: right;
         grid-row: 3;
     }
 
     .requirements {
         grid-column: 2/ span 4;
         grid-row: 4;
-
     }
 
     // footer
     footer {
-        grid-column: 10/ span 3;
-        text-align: right;
+        grid-column: 2/ span 10;
+        text-align: center;
         grid-row: 5;
 
     }
@@ -210,7 +216,7 @@ nav {
     }
 
     .design-selection {
-        grid-column: 1/ span 2;
+        grid-column: 2/ span 6;
         grid-row: 1;
 
 
@@ -224,8 +230,9 @@ nav {
     }
 
     .zen-resources {
-        grid-column: 10/ span 2;
+        grid-column: 9/ span 3;
         grid-row: 1;
+        text-align: right;
 
     }
 
