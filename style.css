@@ -269,5 +269,19 @@ body::before {
     opacity: 1;
   }
 }
+.next, .previous {
+  background-color: #275059;
+  border-radius: 3rem;
+  padding: 1rem;
+  color: white;
+}
+
+.next:hover, .previous:hover {
+  background: #fe9200;
+}
+
+#zen-summary a:hover {
+  color: #fe9200;
+}
 
 /*# sourceMappingURL=style.css.map */
