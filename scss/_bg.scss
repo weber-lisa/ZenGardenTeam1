@@ -1,68 +1,142 @@
-// variables
-$horizon-y: 90vh;
-$boat-x: 10vw;
 
-// .page-wrapper {
-   body {
+
+body {
+   position: relative;
+   
    background: linear-gradient($sky-1 30%, $sky-2), linear-gradient($water-1, $water-2);
    background-size: 100% $horizon-y,
-   auto calc(100% - #{$horizon-y});
+                     auto calc(100% - #{$horizon-y} + #{$page-y-drop});
    background-position-y: top, $horizon-y;
    background-repeat: no-repeat, no-repeat;
+}
+
+// body::before {
+//    content: "";
+//    display: block;
+//    position: absolute;
+//    background-image: url("./images/waves.svg");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    // width: 120vw;
+//    width: 100vw;
+//    height: 20px;
+//    right: -20vw;
+//    top: calc(80.5vh - 12px);
+//    z-index: 2;
+// }
+
+.page-wrapper  {
+   display: block;
+   position: relative;
+   top: 85vh;
+
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("./images/fisherman.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      right: 17vw;
+      top: calc(-5vh - 85px);
+      // top: calc(#{$horizon-y} - 85px);
+      transform: scaleX(-1);
+      filter: FlipH;
+   }
 
    &::after {
       content: "";
       display: block;
-      background-image: url("./images/wide-whale.svg");
-      width: 80%;
-      height: 50vw;
       position: relative;
-      left: 5%;
+      background-image: url("./images/vertical-whale.svg");
       background-repeat: no-repeat;
       background-size: contain;
+      width: 100%;
+      height: 97vw;
+      left: 5%;
+      // top: $page-y-drop;
+      transform: scaleX(-1);
    }
 }
 
-// .intro {
-//    &::before {
-//       content: "";
-//       background-image: url("./images/fisherman.svg");
-//       background-repeat: no-repeat;
-//       background-size: contain;
-//       display: block;
-//       height: 150px;
-//       width: 500px;
-//       position: relative;
+@media (min-width: 40em) {
+   .page-wrapper::after {
+      content: "";
+      display: block;
+      position: relative;
+      background-image: url("./images/wide-whale.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 50vw;
+      left: 2%;
+      transform: scaleX(1);
+   }
 
-//       bottom: calc(94px - #{$horizon-y});
-//       // position: absolute;
-//       // bottom: 10px;
-//       left: 50vw;
-//    }
-// }
+   
+}
 
-body {
-   position: relative;
+header {
+   position : absolute;
+   top: -70vh;
+   right: 17vw;
+   text-align: right;
+   padding-left: .5em;
 
    &::before {
       content: "";
-      background-image: url("./images/fisherman.svg");
+      display: block;
+      position: absolute;
+      background-image: url("./images/cloud-sm.svg");
       background-repeat: no-repeat;
       background-size: contain;
+      width: 45vw;
+      height: 20vh;
+      top: -18vh;
+      left: 0;
+      z-index: -1;
+   }
+
+   &::after {
+      content: "";
       display: block;
-      height: 150px;
-      width: 150px;
       position: absolute;
-      right: 17vw;
-      top: calc(#{$horizon-y} - 85px);
-      transform: scaleX(-1);
-    filter: FlipH;
+      background-image: url("./images/cloud-sm.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30vw;
+      height: 10vh;
+      top: 13vh;
+      left: 20vw;
+      z-index: -1;
    }
 }
 
 
-@media (min-width: 30em) {
+@media (min-width: 30em) { 
    .intro {
-      margin: 1vw;
+      header {
+         h1 {
+            font-size: 3vw;
+         }
+         h2 {
+            font-size: 6vw;
+         }
+      }
    }
+
+   // .participation::before{
+   //    content: "";
+   //       display: block;
+   //       position: relative;
+   //       background-image: url("./images/bubbles.svg");
+   //       background-repeat: no-repeat;
+   //       background-size: contain;
+   //       width: 30vw;
+   //       height: 10vh;
+   //       // top: 13vh;
+   //       // left: 20vw;
+   // }
 }

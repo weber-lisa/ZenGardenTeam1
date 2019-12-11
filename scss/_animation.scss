@@ -14,3 +14,78 @@
       opacity: 1;
    }
 }
+
+
+header::before {
+   animation-name: cloud-drift;
+   animation-duration: 360s;
+   // animation-direction: forward;
+
+}
+header::after {
+   animation-name: cloud-drift2;
+   animation-duration: 760s;
+   // animation-direction: forward;
+
+}
+
+// @keyframes cloud-drift {
+//    from {
+//       transform: translateX(0);
+//    }
+
+//    to {
+//       transform: translateX(2500px);
+//    }
+// }
+
+// @keyframes cloud-drift2 {
+//    from {
+//       transform: translateX(10vw);
+//    }
+
+//    to {
+//       transform: translateX(2500px);
+//    }
+// }
+
+
+body::before {
+   animation-name: rolling-waves;
+   animation-duration: 30s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+
+@keyframes rolling-waves {
+   from {
+      transform: translateX(-20vw);
+   }
+
+   to {
+      transform: translateX(0);
+   }
+}
+
+.participation::before{ 
+   animation-name: rising-bubbles;
+   animation-duration: 20s;
+   // animation-direction: forward;
+   animation-iteration-count: infinite;
+}
+
+@keyframes rising-bubbles {
+   0% {
+      opacity: 0;
+      transform: translateY(0);
+   }
+
+   50% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+      transform: translateY(-300px);
+   }
+}
