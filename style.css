@@ -255,26 +255,20 @@ nav li {
   color: white;
 }
 
+a {
+  color: #66C4D9;
+}
+
+a:hover {
+  color: #8fd4e3;
+}
+
 body {
   position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 80.5vh, auto calc(100% - 80.5vh + 85vh);
-  background-position-y: top, 80.5vh;
+  background-size: 100% 81.5vh, auto calc(100% - 81.5vh + 90vh);
+  background-position-y: top, 81.5vh;
   background-repeat: no-repeat, no-repeat;
-}
-
-body::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url("./images/waves.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 20px;
-  right: -20vw;
-  top: calc(80.5vh - 12px);
-  z-index: 2;
 }
 
 .page-wrapper {
@@ -364,17 +358,6 @@ header::after {
   .intro header h2 {
     font-size: 6vw;
   }
-
-  .participation::before {
-    content: "";
-    display: block;
-    position: relative;
-    background-image: url("./images/bubbles.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 30vw;
-    height: 10vh;
-  }
 }
 .summary,
 .preamble {
@@ -434,15 +417,10 @@ body::before {
     transform: translateY(-300px);
   }
 }
-a {
-  color: #66C4D9;
-}
-
-a:hover {
-  color: #8fd4e3;
-}
-
 /* debugging */
 .summary p,
 .preamble p {
-  text-shadow: 0px 5px 10px rgba(57, 
+  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */
