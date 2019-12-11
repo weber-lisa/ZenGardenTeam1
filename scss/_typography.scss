@@ -11,7 +11,7 @@ $secondary-font: 'Lobster', cursive;
 //font styling
 header h1 {
   font-family: $primary-font;
-  color: $color-2;
+  color: $color-1;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -22,7 +22,7 @@ header h2 {
   color: $color-1;
   font-size: 3rem;
   line-height: 1.1;
-  margin: 0 0 2rem 0;
+  // margin: 0 0 2rem 0;
 }
 
 // For the "CSS" in the title
@@ -33,40 +33,38 @@ abbr { text-decoration: none; }
         font-family: $primary-font;
         font-size: 1.1rem;
         line-height: 1.7rem;
-        color: lighten($color-3, 25%);
-      
-        a {
-          color: $color-2;
-          text-decoration: underline;
-        }
+        color: $color-light;
     }
-    margin-bottom: 17rem;
 }
 
 h3 {
   font-family: $primary-font;
-  color: $color-1;
+  color: $color-accent;
+
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 p {
   font-family: $primary-font;
   font-size: 1rem;
   line-height: 1.4;
-  color: lighten($color-3, 25%);
-  margin-bottom: .5rem;
+  color: $color-light;
+}
 
-  a {
-    color: $color-2;
-    text-decoration: underline;
+a {
+  // text-decoration: none;
+  color: $color-link;
+}
+
+a:hover {
+  color: lighten($color-link, 10%);
+}
+
+nav {
+  li {
+      color: $color-light;
   }
-
-//   @include MQ(S) {
-//     font-size: 1.6rem;
-//     line-height: 1.6;
-//   }
 }

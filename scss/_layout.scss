@@ -1,9 +1,9 @@
 //variables
 $line-height: 1.5;
-$margin-body: 0;
+// $margin-body: 0;
 // $margin-body: 10px;
-$padding-grid: 0;
-$padding-body: 0;
+// $padding-grid: 0;
+// $padding-body: 0;
 // $padding-grid: 2em;
 // $padding-body: 3em;
 
@@ -25,42 +25,41 @@ html {
 body {
     display: block;
     line-height: $line-height;
-    
 }
 
 ul {
     list-style-type: none;
 }
 
-
-
-footer {
-    padding: $padding-body;
-    margin: $margin-body;
-}
+// footer {
+//     padding: $padding-body;
+//     margin: $margin-body;
+// }
 
 
 // -----------------------------------
 // Mobile
 // ----------------------------------- 
-.page-wrapper {
-    // padding: 1.3rem;
- }
 
- header {
-    padding: 0;
- }
+.intro,
+.preamble {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
 
-// .intro { margin-top: 4rem; }
-.summary p:last-child { display: none; }
+// .summary p:last-child { display: none; }
 
-// .preamble { margin-bottom: 5rem; }
 .main {
-    > div {
-        // margin-bottom: 5rem;
-        h3 { color: #ffcc00; }
-    }
+    // >div {
+
+    //     // margin-bottom: 5rem;
+    //     h3 {
+    //         color: #ffcc00;
+    //     }
+    // }
+
     footer {
+
         // margin-bottom: 5rem;
         a {
             padding-right: 1rem;
@@ -68,19 +67,23 @@ footer {
     }
 }
 
-.wrapper div h3 { display: none; }
-.wrapper div:nth-child(2) { display: none; }
+
+p {
+      margin-bottom: .5rem;
+}
+
+h3 {
+    margin-top: 1rem;
+}
+// .wrapper div h3 { display: none; }
+// .wrapper div:nth-child(2) { display: none; }
 
 nav {
-  li {
-    color: white;
-    border-bottom: solid gray .5px;
-    padding: 1rem 0;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
+    li {
+        border-bottom: solid gray .5px;
+        padding: 1rem 0;
+        // margin: 1rem 0;
+    }
 }
 
 
@@ -88,50 +91,24 @@ nav {
 // Medium & Wide
 // ----------------------------------- 
 @media (min-width: 30em) {
-    
-    .intro {
-       margin: 0;
-       // position: relative;
-       // top: 100vh;
- 
-       header {
-        //   padding: 0;
-        //   position : absolute;
-        //   top: -75vh;
-        //   right: 17vw;
- 
-          h1 {
-             font-size: 3vw;
-          }
- 
-          h2 {
-             font-size: 6vw;
-          }
-       }
-    }
- 
-    
- 
+
     .preamble,
     .participation,
     .requirements,
     .sidebar,
     .wrapper {
-    //    padding: 10px;
-    //    margin: 2vw;
+        //    margin: 2vw;
     }
- 
- 
- }
+}
 
- @media (max-width: 30em) {
-     .intro,
-     .main,
-     .sidebar {
-         margin: 1rem;
-     }
+@media (max-width: 30em) {
 
- }
+    .intro,
+    .main,
+    .sidebar {
+        margin: 1rem;
+    }
+}
 
 @media (min-width: 30em) {
 
@@ -152,7 +129,6 @@ nav {
     .summary {
         grid-column: 8 / span 3;
         grid-row: 2;
-        // text-align: center;
     }
 
     .preamble {
@@ -176,7 +152,6 @@ nav {
     .participation {
         grid-column: 3/ span 4;
         grid-row: 2;
-
     }
 
     .benefits {
@@ -194,14 +169,12 @@ nav {
         grid-column: 2/ span 10;
         text-align: center;
         grid-row: 5;
-
     }
 
     // sidebar
     // grid 3
     .sidebar {
         font-size: smaller;
-
     }
 
     .sidebar p {
@@ -212,28 +185,22 @@ nav {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
-        
     }
 
     .design-selection {
         grid-column: 2/ span 6;
         grid-row: 1;
-
-
     }
 
     .design-archives {
         grid-column: 5/ span 2;
         grid-row: 1;
-
-
     }
 
     .zen-resources {
         grid-column: 9/ span 3;
         grid-row: 1;
         text-align: right;
-
     }
 
 }

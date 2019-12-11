@@ -25,55 +25,29 @@ ul {
   list-style-type: none;
 }
 
-footer {
-  padding: 0;
-  margin: 0;
+.intro,
+.preamble {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-header {
-  padding: 0;
-}
-
-.summary p:last-child {
-  display: none;
-}
-
-.main > div h3 {
-  color: #ffcc00;
-}
 .main footer a {
   padding-right: 1rem;
 }
 
-.wrapper div h3 {
-  display: none;
+p {
+  margin-bottom: 0.5rem;
 }
 
-.wrapper div:nth-child(2) {
-  display: none;
+h3 {
+  margin-top: 1rem;
 }
 
 nav li {
-  color: white;
   border-bottom: solid gray 0.5px;
   padding: 1rem 0;
 }
-nav a {
-  text-decoration: none;
-  color: white;
-}
 
-@media (min-width: 30em) {
-  .intro {
-    margin: 0;
-  }
-  .intro header h1 {
-    font-size: 3vw;
-  }
-  .intro header h2 {
-    font-size: 6vw;
-  }
-}
 @media (max-width: 30em) {
   .intro,
 .main,
@@ -175,7 +149,7 @@ xTypography
 -------------------------------- */
 header h1 {
   font-family: "Nunito", sans-serif;
-  color: #66C4D9;
+  color: #275059;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -186,35 +160,26 @@ header h2 {
   color: #275059;
   font-size: 3rem;
   line-height: 1.1;
-  margin: 0 0 2rem 0;
 }
 
 abbr {
   text-decoration: none;
 }
 
-.summary {
-  margin-bottom: 17rem;
-}
 .summary p {
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7rem;
   color: white;
 }
-.summary p a {
-  color: #66C4D9;
-  text-decoration: underline;
-}
 
 h3 {
   font-family: "Nunito", sans-serif;
-  color: #275059;
+  color: #ffcc00;
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 p {
@@ -222,19 +187,40 @@ p {
   font-size: 1rem;
   line-height: 1.4;
   color: white;
-  margin-bottom: 0.5rem;
 }
-p a {
+
+a {
   color: #66C4D9;
-  text-decoration: underline;
+}
+
+a:hover {
+  color: #8fd4e3;
+}
+
+nav li {
+  color: white;
 }
 
 body {
   position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 80vh, auto calc(100% - 80vh + 85vh);
-  background-position-y: top, 80vh;
+  background-size: 100% 80.5vh, auto calc(100% - 80.5vh + 85vh);
+  background-position-y: top, 80.5vh;
   background-repeat: no-repeat, no-repeat;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 20px;
+  right: -20vw;
+  top: calc(80.5vh - 12px);
+  z-index: 2;
 }
 
 .page-wrapper {
@@ -290,7 +276,50 @@ header {
   text-align: right;
   padding-left: 0.5em;
 }
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/cloud-sm.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45vw;
+  height: 20vh;
+  top: -18vh;
+  left: 0;
+}
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/cloud-sm.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  height: 10vh;
+  top: 13vh;
+  left: 20vw;
+}
 
+@media (min-width: 30em) {
+  .intro header h1 {
+    font-size: 3vw;
+  }
+  .intro header h2 {
+    font-size: 6vw;
+  }
+
+  .participation::before {
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url("./images/bubbles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 10vh;
+  }
+}
 .summary,
 .preamble {
   animation-name: pageload;
@@ -305,31 +334,73 @@ header {
     opacity: 1;
   }
 }
+header::before {
+  animation-name: cloud-drift;
+  animation-duration: 360s;
+  animation-direction: forward;
+}
+
+header::after {
+  animation-name: cloud-drift2;
+  animation-duration: 760s;
+  animation-direction: forward;
+}
+
+@keyframes cloud-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+@keyframes cloud-drift2 {
+  from {
+    transform: translateX(10vw);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+body::before {
+  animation-name: rolling-waves;
+  animation-duration: 30s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rolling-waves {
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.participation::before {
+  animation-name: rising-bubbles;
+  animation-duration: 30s;
+  animation-direction: forward;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rising-bubbles {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
 /* debugging */
-div {
-  border: 1px solid red;
-}
-
-::before,
-.intro {
-  border: 1px solid black;
-}
-
-header h1 {
-  color: #275059;
-}
-
 .summary p,
 .preamble p {
   text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
-}
-
-root {
-  font-size: 10px;
-}
-
-body {
-  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
