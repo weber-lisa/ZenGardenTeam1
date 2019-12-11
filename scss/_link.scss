@@ -1,0 +1,8 @@
+a {
+   // text-decoration: none;
+   color: $color-link;
+}
+
+a:hover {
+   color: lighten($color-link, 10%);
+}

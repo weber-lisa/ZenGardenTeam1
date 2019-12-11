@@ -434,10 +434,15 @@ body::before {
     transform: translateY(-300px);
   }
 }
+a {
+  color: #66C4D9;
+}
+
+a:hover {
+  color: #8fd4e3;
+}
+
 /* debugging */
 .summary p,
 .preamble p {
-  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
-}
-
-/*# sourceMappingURL=style.css.map */
+  text-shadow: 0px 5px 10px rgba(57, 
