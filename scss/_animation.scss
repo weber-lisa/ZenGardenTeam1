@@ -1,7 +1,10 @@
 .summary,
-.preamble {
+.preamble,
+.main {
    animation-name: pageload;
    animation-duration: 6s;
+   animation-delay: 3s;
+   animation-fill-mode: both;
 
 }
 
