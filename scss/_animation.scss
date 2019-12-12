@@ -1,7 +1,10 @@
 .summary,
-.preamble {
+.preamble,
+.main {
    animation-name: pageload;
    animation-duration: 6s;
+   animation-delay: 3s;
+   animation-fill-mode: both;
 
 }
 
@@ -19,51 +22,68 @@
 header::before {
    animation-name: cloud-drift;
    animation-duration: 360s;
-   // animation-direction: forward;
-
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 header::after {
    animation-name: cloud-drift2;
    animation-duration: 760s;
-   // animation-direction: forward;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 
 }
 
-// @keyframes cloud-drift {
-//    from {
-//       transform: translateX(0);
-//    }
+@keyframes cloud-drift {
+   0% {
+      transform: translateX(0);
+   }
+   50% {
+      transform: translateX(100vw);
+   }
+   50.001% {
+      transform: translateX(-100vw);
+   }
 
-//    to {
-//       transform: translateX(2500px);
-//    }
-// }
+   100% {
+      transform: translateX(0);
+   }
+}
 
-// @keyframes cloud-drift2 {
-//    from {
-//       transform: translateX(10vw);
-//    }
+@keyframes cloud-drift2 {
+   0% {
+      transform: translateX(10vw);
 
-//    to {
-//       transform: translateX(2500px);
-//    }
-// }
+   }
+
+   50% {
+      transform: translateX(110vw);
+      
+   }
+   50.0001% {
+      transform: translateX(-90vw);
+   }
+   100% {
+      transform: translateX(10vw);
+   }
+}
 
 
 body::before {
    animation-name: rolling-waves;
-   animation-duration: 30s;
-   animation-direction: alternate;
+   animation-duration: 300s;
+   // animation-direction: alternate;
    animation-iteration-count: infinite;
+   animation-timing-function: linear;
+
 }
 
 @keyframes rolling-waves {
    from {
-      transform: translateX(-20vw);
+      transform: translateX(0);
    }
 
    to {
-      transform: translateX(0);
+      transform: translateX(8000px);
    }
 }
 
