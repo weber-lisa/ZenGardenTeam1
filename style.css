@@ -490,6 +490,17 @@ header::after {
   }
 }
 
+header::before {
+  -webkit-animation-name: cloud-drift;
+          animation-name: cloud-drift;
+  -webkit-animation-duration: 360s;
+          animation-duration: 360s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 header::after {
   -webkit-animation-name: cloud-drift2;
           animation-name: cloud-drift2;
@@ -577,6 +588,17 @@ header::after {
   }
 }
 
+body::before {
+  -webkit-animation-name: rolling-waves;
+          animation-name: rolling-waves;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 @-webkit-keyframes rolling-waves {
   from {
     -webkit-transform: translateX(0);
@@ -597,6 +619,15 @@ header::after {
     -webkit-transform: translateX(8000px);
             transform: translateX(8000px);
   }
+}
+
+.participation::before {
+  -webkit-animation-name: rising-bubbles;
+          animation-name: rising-bubbles;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes rising-bubbles {

@@ -19,12 +19,12 @@
 }
 
 
-// header::before {
-//    animation-name: cloud-drift;
-//    animation-duration: 360s;
-//    animation-iteration-count: infinite;
-//    animation-timing-function: linear;
-// }
+header::before {
+   animation-name: cloud-drift;
+   animation-duration: 360s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
 header::after {
    animation-name: cloud-drift2;
    animation-duration: 760s;
@@ -68,14 +68,14 @@ header::after {
 }
 
 
-// body::before {
-//    animation-name: rolling-waves;
-//    animation-duration: 300s;
-//    // animation-direction: alternate;
-//    animation-iteration-count: infinite;
-//    animation-timing-function: linear;
+body::before {
+   animation-name: rolling-waves;
+   animation-duration: 300s;
+   // animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 
-// }
+}
 
 @keyframes rolling-waves {
    from {
@@ -87,12 +87,12 @@ header::after {
    }
 }
 
-// .participation::before{ 
-//    animation-name: rising-bubbles;
-//    animation-duration: 20s;
-//    // animation-direction: forward;
-//    animation-iteration-count: infinite;
-// }
+.participation::before{ 
+   animation-name: rising-bubbles;
+   animation-duration: 20s;
+   // animation-direction: forward;
+   animation-iteration-count: infinite;
+}
 
 @keyframes rising-bubbles {
    0% {
