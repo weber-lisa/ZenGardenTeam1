@@ -414,15 +414,23 @@ header::after {
     font-size: 6vw;
   }
 
-  .participation::before {
+  .participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
     content: "";
     display: block;
     position: absolute;
     background-image: url("./images/bubbles.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30vw;
+    width: 10vw;
     height: 10vh;
+  }
+
+  .benefits::before,
+.explanation::before {
+    right: calc(100vw / 12 * 2);
   }
 }
 .summary,
@@ -499,10 +507,26 @@ body::before {
     transform: translateX(8000px);
   }
 }
-.participation::before {
+.participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
   animation-name: rising-bubbles;
   animation-duration: 20s;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
+}
+
+.explanation::before {
+  animation-delay: 5s;
+}
+
+.benefits::before {
+  animation-delay: 10s;
+}
+
+.requirements::before {
+  animation-delay: 15s;
 }
 
 @keyframes rising-bubbles {
@@ -519,6 +543,19 @@ body::before {
   }
 }
 /* debugging */
+div {
+  border: 1px solid red;
+}
+
+::before, ::after, header,
+.intro {
+  border: 1px solid black;
+}
+
+header h1 {
+  color: #275059;
+}
+
 .summary p,
 .preamble p {
   text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
