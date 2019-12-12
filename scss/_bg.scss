@@ -150,3 +150,18 @@ header {
       // filter: FlipH;
    }
 }
+
+@media (min-width: 60em) {
+   footer::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("./images/bubbles.svg");
+      background-repeat: no-repeat;
+      // background-size: 135.01px 209.83px;
+      width: 135.01px;
+      height: 209.83px;
+      right: calc(100vw / 12 * 3);
+      // transform: scale(-2);
+   }
+}

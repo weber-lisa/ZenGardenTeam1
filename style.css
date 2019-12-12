@@ -433,6 +433,18 @@ header::after {
     right: calc(100vw / 12 * 2);
   }
 }
+@media (min-width: 60em) {
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./images/bubbles.svg");
+    background-repeat: no-repeat;
+    width: 135.01px;
+    height: 209.83px;
+    right: calc(100vw / 12 * 3);
+  }
+}
 .summary,
 .preamble,
 .main {
@@ -540,6 +552,26 @@ body::before {
   100% {
     opacity: 0;
     transform: translateY(-300px);
+  }
+}
+footer::before {
+  animation-name: rising-bubbles2;
+  animation-duration: 30s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rising-bubbles2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-700px);
   }
 }
 /* debugging */
