@@ -106,10 +106,14 @@ h3 {
   margin-top: 1rem;
 }
 
+.design-selection h3 {
+  display: none;
+}
+
 nav li {
   width: 100%;
   border-top: solid gray .5px;
-  padding: 1.5rem 0;
+  padding: 1.5rem 5%;
   font-style: italic;
 }
 
