@@ -18,13 +18,13 @@
 
 header::before {
    animation-name: cloud-drift;
-   animation-duration: 6s;
+   animation-duration: 360s;
    animation-iteration-count: infinite;
    animation-timing-function: linear;
 }
 header::after {
    animation-name: cloud-drift2;
-   animation-duration: 16s;
+   animation-duration: 760s;
    animation-iteration-count: infinite;
    animation-timing-function: linear;
 
