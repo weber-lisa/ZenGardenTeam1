@@ -35,12 +35,11 @@ ul {
 
 // .summary p:last-child { display: none; }
 
-.main {
-
-    footer {
-        a {
-            padding-right: 1rem;
-        }
+.main footer{
+    text-align: center;
+    padding: 2rem 0;
+    a {
+        padding: .5rem;
     }
 }
 
@@ -51,14 +50,23 @@ p {
 h3 {
     margin-top: 1rem;
 }
-// .wrapper div h3 { display: none; }
-// .wrapper div:nth-child(2) { display: none; }
 
 nav {
     li {
-        border-bottom: solid gray .5px;
-        padding: 1rem 0;
-        // margin: 1rem 0;
+        width: 100%;
+        border-top: solid gray .5px;
+        padding: 1.5rem 0;
+        font-style: italic;
+        .design-name {
+            display: block;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        a {
+            font-family: $primary-font;
+            font-style: normal;
+            text-decoration: none;
+        }
     }
 }
 
@@ -137,9 +145,6 @@ nav {
 
     // sidebar
     // grid 3
-    .sidebar {
-        font-size: smaller;
-    }
 
     .sidebar p {
         padding: 0;
@@ -148,12 +153,20 @@ nav {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
+        grid-auto-flow: row;
     }
 
     .design-selection {
-        grid-column: 2/ span 5;
-        grid-row: 1/ span 2;
+        grid-column: 2/ 12;
+        grid-row: 1;
+    }
+
+    .design-selection nav ul {
+        display: block;
+        li {
+            float: left;
+            width: 50%;
+        }
     }
 
     .design-archives {
@@ -164,7 +177,7 @@ nav {
 
     .zen-resources {
         grid-column: 9/ span 3;
-        grid-row: 1;
+        grid-row: 3;
         text-align: right;
     }
 
