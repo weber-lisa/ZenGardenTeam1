@@ -269,6 +269,7 @@ body {
   background-size: 100% 81.5vh, auto calc(100% - 81.5vh + 90vh);
   background-position-y: top, 81.5vh;
   background-repeat: no-repeat, no-repeat;
+  overflow: hidden;
 }
 
 .page-wrapper {
@@ -383,6 +384,22 @@ header::after {
   animation-duration: 760s;
 }
 
+@keyframes cloud-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+@keyframes cloud-drift2 {
+  from {
+    transform: translateX(10vw);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
 body::before {
   animation-name: rolling-waves;
   animation-duration: 30s;

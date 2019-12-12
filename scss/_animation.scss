@@ -29,25 +29,25 @@ header::after {
 
 }
 
-// @keyframes cloud-drift {
-//    from {
-//       transform: translateX(0);
-//    }
+@keyframes cloud-drift {
+   from {
+      transform: translateX(0);
+   }
 
-//    to {
-//       transform: translateX(2500px);
-//    }
-// }
+   to {
+      transform: translateX(2500px);
+   }
+}
 
-// @keyframes cloud-drift2 {
-//    from {
-//       transform: translateX(10vw);
-//    }
+@keyframes cloud-drift2 {
+   from {
+      transform: translateX(10vw);
+   }
 
-//    to {
-//       transform: translateX(2500px);
-//    }
-// }
+   to {
+      transform: translateX(2500px);
+   }
+}
 
 
 body::before {
