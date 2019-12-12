@@ -1,13 +1,8 @@
-.next,.previous{
-    background-color:$color-1;
-    border-radius: 3rem;
-    padding: 1rem;
-    color: $color-light;
-}
+
 
 .next, .previous{
     &:hover{
-        background:$color-5;
+        color: $color-5;
         font-weight: bold;
         
     }
