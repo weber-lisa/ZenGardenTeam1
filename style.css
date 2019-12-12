@@ -407,6 +407,17 @@ header::after {
   .intro header h2 {
     font-size: 6vw;
   }
+
+  .participation::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./images/bubbles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 10vh;
+  }
 }
 .summary,
 .preamble,

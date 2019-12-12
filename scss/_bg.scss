@@ -129,16 +129,16 @@ header {
       }
    }
 
-   // .participation::before{
-   //    content: "";
-   //       display: block;
-   //       position: relative;
-   //       background-image: url("./images/bubbles.svg");
-   //       background-repeat: no-repeat;
-   //       background-size: contain;
-   //       width: 30vw;
-   //       height: 10vh;
-   //       // top: 13vh;
-   //       // left: 20vw;
-   // }
+   .participation::before{
+      content: "";
+         display: block;
+         position: absolute;
+         background-image: url("./images/bubbles.svg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 30vw;
+         height: 10vh;
+         // top: 13vh;
+         // left: 20vw;
+   }
 }
