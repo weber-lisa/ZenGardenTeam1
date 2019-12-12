@@ -109,13 +109,8 @@ h3 {
 
 nav li {
   width: 100%;
-<<<<<<< HEAD
-  border-top: solid gray .5px;
-  padding: 1.5rem 5%;
-=======
   border-top: solid gray 0.5px;
-  padding: 1.5rem 0;
->>>>>>> 7a0c9279ae49e4fa3bc6939069cfe5271b24ab56
+  padding: 1.5rem 5%;
   font-style: italic;
 }
 nav li .design-name {
