@@ -273,6 +273,20 @@ body {
   overflow-x: hidden;
 }
 
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/waves2-01.svg");
+  background-repeat: repeat-x;
+  background-size: calc(1316px / 2) calc(40.8px / 2);
+  width: 20000px;
+  height: 41px;
+  right: 0;
+  top: calc(81.5vh - 22px);
+  z-index: 2;
+}
+
 .page-wrapper {
   display: block;
   position: relative;
@@ -419,17 +433,17 @@ header::after {
 }
 body::before {
   animation-name: rolling-waves;
-  animation-duration: 30s;
-  animation-direction: alternate;
+  animation-duration: 300s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes rolling-waves {
   from {
-    transform: translateX(-20vw);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(8000px);
   }
 }
 .participation::before {
