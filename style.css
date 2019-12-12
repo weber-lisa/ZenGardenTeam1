@@ -103,10 +103,19 @@ h3 {
   margin-top: 1rem;
 }
 
+.design-selection h3 {
+  display: none;
+}
+
 nav li {
   width: 100%;
+<<<<<<< HEAD
+  border-top: solid gray .5px;
+  padding: 1.5rem 5%;
+=======
   border-top: solid gray 0.5px;
   padding: 1.5rem 0;
+>>>>>>> 7a0c9279ae49e4fa3bc6939069cfe5271b24ab56
   font-style: italic;
 }
 nav li .design-name {
@@ -283,15 +292,17 @@ a {
   color: #ffa832;
 }
 
-.next, .previous {
-  background-color: #275059;
-  border-radius: 3rem;
-  padding: 1rem;
-  color: white;
+footer a:link {
+  color: #66C4D9;
+}
+
+footer a:hover {
+  color: #fe9200;
+  font-weight: bold;
 }
 
 .next:hover, .previous:hover {
-  background: #fe9200;
+  color: #fe9200;
   font-weight: bold;
 }
 

@@ -11,3 +11,12 @@ a {
         }
     }
 }
+footer a:link{
+	color: $color-link;
+	
+}
+footer a:hover{
+	color: $color-5;
+	font-weight: bold;
+
+}
