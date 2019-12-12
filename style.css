@@ -1,18 +1,466 @@
-/* Error: Undefined variable.
- *   ,
- * 5 |     color: $color-3;
- *   |            ^^^^^^^^
- *   '
- *   scss\_buttons.scss 5:12  @import
- *   scss\style.scss 11:9     root stylesheet */
+@import url("https://fonts.googleapis.com/css?family=Lobster|Nunito:400,700,900&display=swap");
+/* -------------------------------- 
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      color: $color-3;\a   \2502             ^^^^^^^^\a   \2575 \a   scss\\_buttons.scss 5:12  @import\a   scss\\style.scss 11:9     root stylesheet";
+xColors
+
+-------------------------------- */
+html {
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0% 0;
+  margin: 0;
+}
+
+body {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.intro,
+.preamble {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.main footer a {
+  padding-right: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+nav li {
+  border-bottom: solid gray 0.5px;
+  padding: 1rem 0;
+}
+
+@media (max-width: 30em) {
+  .intro,
+.main,
+.sidebar {
+    margin: 1rem;
+  }
+}
+@media (min-width: 30em) {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+  }
+
+  .intro header {
+    grid-column: 2/span 4;
+    grid-row: 1;
+    text-align: right;
+  }
+
+  .summary {
+    grid-column: 6/span 6;
+    grid-row: 2;
+  }
+
+  .preamble {
+    grid-column: 2/span 6;
+    grid-row: 3;
+  }
+
+  .explanation {
+    grid-column: 5/span 6;
+    grid-row: 1;
+  }
+
+  #zen-supporting {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+  }
+
+  .participation {
+    grid-column: 2/span 7;
+    grid-row: 2;
+  }
+
+  .benefits {
+    grid-column: 7/span 5;
+    grid-row: 3;
+  }
+
+  .requirements {
+    grid-column: 2/span 9;
+    grid-row: 4;
+  }
+
+  footer {
+    grid-column: 2/span 10;
+    text-align: center;
+    grid-row: 5;
+  }
+
+  .sidebar {
+    font-size: smaller;
+  }
+
+  .sidebar p {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .design-selection {
+    grid-column: 2/span 5;
+    grid-row: 1/span 2;
+  }
+
+  .design-archives {
+    grid-column: 9/span 3;
+    grid-row: 2;
+    text-align: right;
+  }
+
+  .zen-resources {
+    grid-column: 9/span 3;
+    grid-row: 1;
+    text-align: right;
+  }
+}
+@media (min-width: 60em) {
+  .intro header {
+    grid-column: 2/span 4;
+    grid-row: 1;
+  }
+
+  .summary {
+    grid-column: 8/span 3;
+    grid-row: 2;
+  }
+
+  .preamble {
+    grid-column: 2/span 4;
+    grid-row: 3;
+  }
+
+  .explanation {
+    grid-column: -5/span 3;
+    grid-row: 1;
+  }
+
+  .participation {
+    grid-column: 3/span 4;
+    grid-row: 2;
+  }
+
+  .benefits {
+    grid-column: -6/span 3;
+    grid-row: 3;
+  }
+
+  .requirements {
+    grid-column: 2/span 4;
+    grid-row: 4;
+  }
+
+  footer {
+    grid-column: 2/span 10;
+    grid-row: 5;
+  }
+
+  .design-selection {
+    grid-column: 2/span 6;
+    grid-row: 1;
+  }
+
+  .design-archives {
+    grid-column: 5/span 2;
+    grid-row: 1;
+  }
+
+  .zen-resources {
+    grid-column: 9/span 3;
+    grid-row: 1;
+  }
+}
+/* -------------------------------- 
+
+xTypography
+
+-------------------------------- */
+header h1 {
+  font-family: "Nunito", sans-serif;
+  color: #275059;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-family: "Lobster", cursive;
+  color: #275059;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  color: #ffcc00;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+a {
+  color: #66C4D9;
+}
+
+a:hover {
+  color: #8fd4e3;
+}
+
+nav li {
+  color: white;
+}
+
+a {
+  color: #66C4D9;
+}
+
+a:hover {
+  color: #8fd4e3;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
+  background-size: 100% 81.5vh, auto calc(100% - 81.5vh + 90vh);
+  background-position-y: top, 81.5vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.page-wrapper {
+  display: block;
+  position: relative;
+  top: 85vh;
+}
+.page-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/fisherman.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  right: 17vw;
+  top: calc(-5vh - 85px);
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+.page-wrapper::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-image: url("./images/vertical-whale.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 97vw;
+  left: 5%;
+  transform: scaleX(-1);
+}
+
+@media (min-width: 40em) {
+  .page-wrapper::after {
+    content: "";
+    display: block;
+    position: relative;
+    background-image: url("./images/wide-whale.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50vw;
+    left: 2%;
+    transform: scaleX(1);
+  }
+}
+header {
+  position: absolute;
+  top: -70vh;
+  right: 17vw;
+  text-align: right;
+  padding-left: 0.5em;
+}
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/cloud-sm.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45vw;
+  height: 20vh;
+  top: -18vh;
+  left: 0;
+  z-index: -1;
+}
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./images/cloud-sm.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  height: 10vh;
+  top: 13vh;
+  left: 20vw;
+  z-index: -1;
+}
+
+@media (min-width: 30em) {
+  .intro header h1 {
+    font-size: 3vw;
+  }
+  .intro header h2 {
+    font-size: 6vw;
+  }
+}
+.summary,
+.preamble {
+  animation-name: pageload;
+  animation-duration: 6s;
+}
+
+@keyframes pageload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header::before {
+  animation-name: cloud-drift;
+  animation-duration: 360s;
+}
+
+header::after {
+  animation-name: cloud-drift2;
+  animation-duration: 760s;
+}
+
+@keyframes cloud-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+@keyframes cloud-drift2 {
+  from {
+    transform: translateX(10vw);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+body::before {
+  animation-name: rolling-waves;
+  animation-duration: 30s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rolling-waves {
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.participation::before {
+  animation-name: rising-bubbles;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rising-bubbles {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
+.next, .previous {
+  background-color: #275059;
+  border-radius: 3rem;
+  padding: 1rem;
+  color: white;
+}
+
+.next:hover, .previous:hover {
+  background: #fe9200;
+  font-weight: bold;
+}
+
+#zen-summary a:hover {
+  color: #fe9200;
+}
+
+div.participation p a:hover {
+  color: #fe9200;
+}
+
+.requirements a:hover {
+  color: #fe9200;
+}
+
+/* debugging */
+.summary p,
+.preamble p {
+  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

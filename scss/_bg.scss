@@ -8,7 +8,7 @@ body {
                      auto calc(100% - #{$horizon-y} + #{$page-y-drop});
    background-position-y: top, $horizon-y;
    background-repeat: no-repeat, no-repeat;
-   overflow: hidden;
+   // overflow: hidden;
 }
 
 // body::before {
