@@ -266,8 +266,8 @@ a:hover {
 body {
   position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: auto 80.5vh, auto calc(100% - 80.5vh + 90vh);
-  background-position-y: top, 80.5vh;
+  background-size: auto 81.5vh, auto calc(100% - 81.5vh + 90vh);
+  background-position-y: top, 81.5vh;
   background-repeat: no-repeat, no-repeat;
   max-width: 100%;
   overflow-x: hidden;
