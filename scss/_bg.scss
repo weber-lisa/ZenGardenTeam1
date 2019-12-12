@@ -4,11 +4,12 @@ body {
    position: relative;
    
    background: linear-gradient($sky-1 30%, $sky-2), linear-gradient($water-1, $water-2);
-   background-size: 100% $horizon-y,
+   background-size: auto $horizon-y,
                      auto calc(100% - #{$horizon-y} + #{$page-y-drop});
    background-position-y: top, $horizon-y;
    background-repeat: no-repeat, no-repeat;
-   // overflow: hidden;
+   max-width:100%;
+   overflow-x: hidden;
 }
 
 // body::before {
@@ -85,6 +86,10 @@ header {
    right: 17vw;
    text-align: right;
    padding-left: .5em;
+   // height: $horizon-y;
+   // width: 100vw;
+      // overflow:hidden; 
+
 
    &::before {
       content: "";

@@ -1,13 +1,13 @@
 /* debugging */
 
-// div {
-//    border: 1px solid red;
-// }
+div {
+   border: 1px solid red;
+}
 
-// ::before,
-// .intro {
-//    border: 1px solid black;
-// }
+::before, ::after, header,
+.intro {
+   border: 1px solid black;
+}
 
 // header h1 {
 //    color: $color-1;

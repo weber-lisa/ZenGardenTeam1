@@ -266,9 +266,11 @@ a:hover {
 body {
   position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
-  background-size: 100% 81.5vh, auto calc(100% - 81.5vh + 90vh);
+  background-size: auto 81.5vh, auto calc(100% - 81.5vh + 90vh);
   background-position-y: top, 81.5vh;
   background-repeat: no-repeat, no-repeat;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page-wrapper {
@@ -375,28 +377,44 @@ header::after {
 }
 header::before {
   animation-name: cloud-drift;
-  animation-duration: 360s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 header::after {
   animation-name: cloud-drift2;
-  animation-duration: 760s;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-drift {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(2500px);
+  50% {
+    transform: translateX(100vw);
+  }
+  50.001% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 @keyframes cloud-drift2 {
-  from {
+  0% {
     transform: translateX(10vw);
   }
-  to {
-    transform: translateX(2500px);
+  50% {
+    transform: translateX(110vw);
+  }
+  50.0001% {
+    transform: translateX(-90vw);
+  }
+  100% {
+    transform: translateX(10vw);
   }
 }
 body::before {
@@ -458,6 +476,15 @@ div.participation p a:hover {
 }
 
 /* debugging */
+div {
+  border: 1px solid red;
+}
+
+::before, ::after, header,
+.intro {
+  border: 1px solid black;
+}
+
 .summary p,
 .preamble p {
   text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);

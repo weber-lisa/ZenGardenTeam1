@@ -18,34 +18,49 @@
 
 header::before {
    animation-name: cloud-drift;
-   animation-duration: 360s;
-   // animation-direction: forward;
-
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 header::after {
    animation-name: cloud-drift2;
-   animation-duration: 760s;
-   // animation-direction: forward;
+   animation-duration: 16s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 
 }
 
 @keyframes cloud-drift {
-   from {
+   0% {
       transform: translateX(0);
    }
+   50% {
+      transform: translateX(100vw);
+   }
+   50.001% {
+      transform: translateX(-100vw);
+   }
 
-   to {
-      transform: translateX(2500px);
+   100% {
+      transform: translateX(0);
    }
 }
 
 @keyframes cloud-drift2 {
-   from {
+   0% {
       transform: translateX(10vw);
+
    }
 
-   to {
-      transform: translateX(2500px);
+   50% {
+      transform: translateX(110vw);
+      
+   }
+   50.0001% {
+      transform: translateX(-90vw);
+   }
+   100% {
+      transform: translateX(10vw);
    }
 }
 
