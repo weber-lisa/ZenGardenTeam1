@@ -1,23 +1,13 @@
+a {
 
+	color: $color-link;
+ }
+ 
 
-#zen-summary {
-	a {
-		&:hover {
-			color: $color-5;
-		}
-	}
-}
-div.participation p {
-	a {
-		&:hover {
-			color: $color-5;
-		}
-	}
-}
-.requirements{
+.requirements, .participation, #zen-summary{
     a{
         &:hover{
-            color: $color-5;
+            color: lighten($color-5, 10%);
         }
     }
 }
