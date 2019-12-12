@@ -283,6 +283,7 @@ body::before {
   width: 20000px;
   height: 41px;
   right: 0;
+  right: -20vw;
   top: calc(81.5vh - 22px);
   z-index: 2;
 }
