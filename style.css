@@ -275,6 +275,28 @@ nav li a {
     grid-row: 1;
   }
 }
+a {
+  color: #66C4D9;
+}
+
+.requirements a:hover, .participation a:hover, #zen-summary a:hover {
+  color: #ffa832;
+}
+
+footer a:link {
+  color: #66C4D9;
+}
+
+footer a:hover {
+  color: #fe9200;
+  font-weight: bold;
+}
+
+.next:hover, .previous:hover {
+  color: #fe9200;
+  font-weight: bold;
+}
+
 body {
   position: relative;
   background: linear-gradient(#b3d4ff 30%, #ffd699), linear-gradient(#4da6ff, #003366);
@@ -295,6 +317,7 @@ body::before {
   width: 20000px;
   height: 41px;
   right: 0;
+  right: -20vw;
   top: calc(81.5vh - 22px);
   z-index: 2;
 }
@@ -480,28 +503,6 @@ body::before {
     transform: translateY(-300px);
   }
 }
-.next:hover, .previous:hover {
-  color: #fe9200;
-  font-weight: bold;
-}
-
-a {
-  color: #66C4D9;
-}
-
-.requirements a:hover, .participation a:hover, #zen-summary a:hover {
-  color: #ffa832;
-}
-
-footer a:link {
-  color: #66C4D9;
-}
-
-footer a:hover {
-  color: #fe9200;
-  font-weight: bold;
-}
-
 /* debugging */
 .summary p,
 .preamble p {
