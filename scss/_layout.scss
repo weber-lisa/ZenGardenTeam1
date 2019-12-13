@@ -51,9 +51,8 @@ h3 {
     margin-top: 1rem;
 }
 
-.design-selection h3 { display: none; }
-
-nav {
+.design-selection {
+    h3 { display: none; }
     li {
         width: 100%;
         border-top: solid gray .5px;
