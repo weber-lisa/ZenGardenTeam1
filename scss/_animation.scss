@@ -25,6 +25,7 @@ header::before {
    animation-iteration-count: infinite;
    animation-timing-function: linear;
 }
+
 header::after {
    animation-name: cloud-drift2;
    animation-duration: 760s;
@@ -37,9 +38,11 @@ header::after {
    0% {
       transform: translateX(0);
    }
+
    50% {
       transform: translateX(100vw);
    }
+
    50.001% {
       transform: translateX(-100vw);
    }
@@ -57,11 +60,13 @@ header::after {
 
    50% {
       transform: translateX(110vw);
-      
+
    }
+
    50.0001% {
       transform: translateX(-90vw);
    }
+
    100% {
       transform: translateX(10vw);
    }
@@ -87,11 +92,27 @@ body::before {
    }
 }
 
-.participation::before{ 
+.participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
    animation-name: rising-bubbles;
    animation-duration: 20s;
-   // animation-direction: forward;
+   animation-timing-function: ease-in;
    animation-iteration-count: infinite;
+   animation-fill-mode: both;
+}
+
+.explanation::before {
+   animation-delay: 5s;
+}
+
+.benefits::before {
+   animation-delay: 10s;
+}
+
+.requirements::before {
+   animation-delay: 15s;
 }
 
 @keyframes rising-bubbles {
@@ -107,5 +128,29 @@ body::before {
    100% {
       opacity: 0;
       transform: translateY(-300px);
+   }
+}
+
+footer::before {
+   animation-name: rising-bubbles2;
+   animation-duration: 30s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+   animation-fill-mode: both;
+}
+
+@keyframes rising-bubbles2 {
+   0% {
+      opacity: 0;
+      transform: translateY(-50px);
+   }
+
+   50% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+      transform: translateY(-700px);
    }
 }

@@ -112,7 +112,11 @@ h3 {
 
 .design-selection li {
   width: 100%;
+<<<<<<< HEAD
   border-top: solid gray .5px;
+=======
+  border-top: solid gray 0.5px;
+>>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
   padding: 1.5rem 5%;
   font-style: italic;
 }
@@ -476,6 +480,37 @@ header::after {
   .intro header h2 {
     font-size: 6vw;
   }
+
+  .participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./images/bubbles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .benefits::before,
+.explanation::before {
+    right: calc(100vw / 12 * 2);
+  }
+}
+@media (min-width: 60em) {
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./images/bubbles.svg");
+    background-repeat: no-repeat;
+    width: 135.01px;
+    height: 209.83px;
+    right: calc(100vw / 12 * 3);
+  }
 }
 
 .summary,
@@ -639,6 +674,7 @@ body::before {
             transform: translateX(8000px);
   }
 }
+<<<<<<< HEAD
 
 .participation::before {
   -webkit-animation-name: rising-bubbles;
@@ -663,6 +699,29 @@ body::before {
     -webkit-transform: translateY(-300px);
             transform: translateY(-300px);
   }
+=======
+.participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
+  animation-name: rising-bubbles;
+  animation-duration: 20s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.explanation::before {
+  animation-delay: 5s;
+}
+
+.benefits::before {
+  animation-delay: 10s;
+}
+
+.requirements::before {
+  animation-delay: 15s;
+>>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
 }
 
 @keyframes rising-bubbles {
@@ -680,7 +739,31 @@ body::before {
             transform: translateY(-300px);
   }
 }
+<<<<<<< HEAD
 
+=======
+footer::before {
+  animation-name: rising-bubbles2;
+  animation-duration: 30s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes rising-bubbles2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-700px);
+  }
+}
+>>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
 /* debugging */
 .summary p,
 .preamble p {
