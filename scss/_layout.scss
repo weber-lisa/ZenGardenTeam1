@@ -27,13 +27,16 @@ ul {
 // Mobile
 // ----------------------------------- 
 
-.intro,
-.preamble {
-    margin-top: 1em;
-    margin-bottom: .5em;
+.intro { margin-top: 1em; }
+.intro .summary {
+    p:first-child { margin-top: 5rem;}
+    p { margin: 1rem 0 0 0; }
+}
+.intro .preamble {
+    h3 { margin-top: 5rem;}
 }
 
-// .summary p:last-child { display: none; }
+.intro, .main { padding: 1rem; }
 
 .main footer{
     text-align: center;
@@ -71,14 +74,8 @@ h3 {
     }
 }
 
-
-@media (max-width: 30em) {
-
-    .intro,
-    .main,
-    .sidebar {
-        margin: 1rem;
-    }
+.design-archives {
+    h3 { display: none; }
 }
 
 // -----------------------------------

@@ -83,10 +83,24 @@ ul {
   list-style-type: none;
 }
 
-.intro,
-.preamble {
+.intro {
   margin-top: 1em;
-  margin-bottom: .5em;
+}
+
+.intro .summary p:first-child {
+  margin-top: 5rem;
+}
+
+.intro .summary p {
+  margin: 1rem 0 0 0;
+}
+
+.intro .preamble h3 {
+  margin-top: 5rem;
+}
+
+.intro, .main {
+  padding: 1rem;
 }
 
 .main footer {
@@ -112,11 +126,7 @@ h3 {
 
 .design-selection li {
   width: 100%;
-<<<<<<< HEAD
   border-top: solid gray .5px;
-=======
-  border-top: solid gray 0.5px;
->>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
   padding: 1.5rem 5%;
   font-style: italic;
 }
@@ -133,12 +143,8 @@ h3 {
   text-decoration: none;
 }
 
-@media (max-width: 30em) {
-  .intro,
-  .main,
-  .sidebar {
-    margin: 1rem;
-  }
+.design-archives h3 {
+  display: none;
 }
 
 @media (min-width: 30em) {
@@ -480,11 +486,10 @@ header::after {
   .intro header h2 {
     font-size: 6vw;
   }
-
   .participation::before,
-.explanation::before,
-.benefits::before,
-.requirements::before {
+  .explanation::before,
+  .benefits::before,
+  .requirements::before {
     content: "";
     display: block;
     position: absolute;
@@ -494,12 +499,12 @@ header::after {
     width: 10vw;
     height: 10vh;
   }
-
   .benefits::before,
-.explanation::before {
+  .explanation::before {
     right: calc(100vw / 12 * 2);
   }
 }
+
 @media (min-width: 60em) {
   footer::before {
     content: "";
@@ -674,15 +679,36 @@ body::before {
             transform: translateX(8000px);
   }
 }
-<<<<<<< HEAD
 
-.participation::before {
+.participation::before,
+.explanation::before,
+.benefits::before,
+.requirements::before {
   -webkit-animation-name: rising-bubbles;
           animation-name: rising-bubbles;
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.explanation::before {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.benefits::before {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.requirements::before {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 
 @-webkit-keyframes rising-bubbles {
@@ -699,29 +725,6 @@ body::before {
     -webkit-transform: translateY(-300px);
             transform: translateY(-300px);
   }
-=======
-.participation::before,
-.explanation::before,
-.benefits::before,
-.requirements::before {
-  animation-name: rising-bubbles;
-  animation-duration: 20s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-}
-
-.explanation::before {
-  animation-delay: 5s;
-}
-
-.benefits::before {
-  animation-delay: 10s;
-}
-
-.requirements::before {
-  animation-delay: 15s;
->>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
 }
 
 @keyframes rising-bubbles {
@@ -739,31 +742,52 @@ body::before {
             transform: translateY(-300px);
   }
 }
-<<<<<<< HEAD
 
-=======
 footer::before {
-  animation-name: rising-bubbles2;
-  animation-duration: 30s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+  -webkit-animation-name: rising-bubbles2;
+          animation-name: rising-bubbles2;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-@keyframes rising-bubbles2 {
+@-webkit-keyframes rising-bubbles2 {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translateY(-700px);
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
   }
 }
->>>>>>> c3df7f289238d44eb3bccd10580b79de97dd1808
+
+@keyframes rising-bubbles2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+}
+
 /* debugging */
 .summary p,
 .preamble p {
