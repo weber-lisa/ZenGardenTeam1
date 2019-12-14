@@ -79,10 +79,6 @@ body::before {
 header {
    position: absolute;
    top: -70vh;
-   right: 17vw;
-   text-align: right;
-   padding-left: .5em;
-
 
    &::before {
       content: "";

@@ -29,54 +29,53 @@ ul {
 
 .intro {
     margin-top: 1em;
-}
-
-.intro .summary {
-    p:first-child {
-        margin-top: 5rem;
-    }
-
-    p {
-        margin: 1rem 0 0 0;
-    }
-}
-
-.intro .preamble {
-    h3 {
-        margin-top: 5rem;
-    }
-}
-
-.intro,
-.main {
     padding: 1rem;
 }
 
-.main footer {
-    text-align: center;
-    padding: 2rem 0;
+.intro .summary {
+    p:first-child { margin-top: 5rem; }
+    p { margin: 1rem 0 0 0; }
+}
 
-    a {
-        padding: .5rem;
+.intro {
+    .preamble h3 { margin-top: 4rem; }
+    .preamble p { margin-top: 1rem; }
+}
+
+.main {
+    .explanation, .participation, .benefits, .requirements {
+        padding: 0 1rem 0 1rem;
+        h3 { margin-top: 4rem; }
+        p { padding-top: 1rem; }
+    }
+    .requirements p:last-child {
+        margin-top: 2rem;
+        padding: 3rem 1rem 3rem 1rem;
+        border: solid $transparent-50 .5px;
+        border-radius: 1rem;
+        font-style: italic;
+        text-align: center;
+    }
+    footer {
+        margin-top: 2rem;
+        padding: 2rem 0;
+        border-top: solid $transparent-50 .5px;
+        background-color: $transparent-10;
+        font-family: $primary-font;
+        text-align: center;
+        a {
+            padding: .8rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }
 
-p {
-    margin-bottom: .5rem;
-}
-
-h3 {
-    margin-top: 1rem;
-}
-
-.design-selection {
-    h3 {
-        display: none;
-    }
-
+.design-selection, .design-archives, .zen-resources {
+    h3 { display: none; }
     li {
         width: 100%;
-        border-top: solid gray .5px;
+        border-top: solid $transparent-50 .5px;
         padding: 1.5rem 5%;
         font-style: italic;
 
@@ -94,32 +93,12 @@ h3 {
     }
 }
 
-.design-archives {
+.design-archives { display: none; }
+.zen-resources { background-color: $transparent-10; }
 
-    h3 {
-        display: none;
-    }
-}
-
-.design-archives,
-.zen-resources {
-
-    h3 {
-        padding: .5rem 5%;
-    }
-
-    li {
-        width: 100%;
-        padding: .5rem 0;
-
-        a {
-            padding: .5rem 5%;
-        }
-    }
-}
-
-
-
+// ...................................................
+//      End of CSS rules for mobile/small screen
+// ...................................................
 
 // -----------------------------------
 // Medium & Wide
