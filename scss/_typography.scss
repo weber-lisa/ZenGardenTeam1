@@ -41,7 +41,7 @@ abbr {
 h3 {
   font-family: $primary-font;
   color: $color-accent;
-
+  text-shadow: 0px 5px 10px rgba(57,54,255,0.9);
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -53,6 +53,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   color: $color-light;
+  text-shadow: 0px 5px 10px rgba(57,54,255,0.9);
 }
 
 a {

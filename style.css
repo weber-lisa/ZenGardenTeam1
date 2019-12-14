@@ -36,6 +36,7 @@ abbr {
 h3 {
   font-family: "Nunito", sans-serif;
   color: #ffcc00;
+  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.9);
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -47,6 +48,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   color: white;
+  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.9);
 }
 
 a {
@@ -96,7 +98,8 @@ ul {
   margin-top: 5rem;
 }
 
-.intro, .main {
+.intro,
+.main {
   padding: 1rem;
 }
 
@@ -293,7 +296,9 @@ a {
   color: #66C4D9;
 }
 
-.requirements a:hover, .participation a:hover, #zen-summary a:hover {
+.requirements a:hover,
+.participation a:hover,
+#zen-summary a:hover {
   color: #ffa832;
 }
 
@@ -305,7 +310,8 @@ footer a:hover {
   color: #fe9200;
 }
 
-.next:hover, .previous:hover {
+.next:hover,
+.previous:hover {
   color: #fe9200;
   font-weight: bold;
 }
@@ -586,9 +592,5 @@ footer::before {
   }
 }
 /* debugging */
-.summary p,
-.preamble p {
-  text-shadow: 0px 5px 10px rgba(57, 54, 255, 0.5);
-}
 
 /*# sourceMappingURL=style.css.map */
