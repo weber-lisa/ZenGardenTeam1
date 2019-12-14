@@ -1,9 +1,8 @@
-
-
-.next, .previous{
-    &:hover{
+.next,
+.previous {
+    &:hover {
         color: $color-5;
         font-weight: bold;
-        
+
     }
 }

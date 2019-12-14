@@ -1,22 +1,26 @@
 a {
 
-	color: $color-link;
- }
- 
+    color: $color-link;
+}
 
-.requirements, .participation, #zen-summary{
-    a{
-        &:hover{
+
+.requirements,
+.participation,
+#zen-summary {
+    a {
+        &:hover {
             color: lighten($color-5, 10%);
         }
     }
 }
-footer a:link{
-	color: $color-link;
-	
+
+footer a:link {
+    color: $color-link;
+
 }
-footer a:hover{
-	color: $color-5;
-	// font-weight: bold; 
+
+footer a:hover {
+    color: $color-5;
+    // font-weight: bold; 
 
 }

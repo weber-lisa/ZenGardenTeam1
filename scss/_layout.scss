@@ -27,27 +27,42 @@ ul {
 // Mobile
 // ----------------------------------- 
 
-.intro { margin-top: 1em; }
+.intro {
+    margin-top: 1em;
+}
+
 .intro .summary {
-    p:first-child { margin-top: 5rem;}
-    p { margin: 1rem 0 0 0; }
+    p:first-child {
+        margin-top: 5rem;
+    }
+
+    p {
+        margin: 1rem 0 0 0;
+    }
 }
+
 .intro .preamble {
-    h3 { margin-top: 5rem;}
+    h3 {
+        margin-top: 5rem;
+    }
 }
 
-.intro, .main { padding: 1rem; }
+.intro,
+.main {
+    padding: 1rem;
+}
 
-.main footer{
+.main footer {
     text-align: center;
     padding: 2rem 0;
+
     a {
         padding: .5rem;
     }
 }
 
 p {
-      margin-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 h3 {
@@ -55,17 +70,22 @@ h3 {
 }
 
 .design-selection {
-    h3 { display: none; }
+    h3 {
+        display: none;
+    }
+
     li {
         width: 100%;
         border-top: solid gray .5px;
         padding: 1.5rem 5%;
         font-style: italic;
+
         .design-name {
             display: block;
             font-size: 1.2rem;
             text-transform: uppercase;
         }
+
         a {
             font-family: $primary-font;
             font-style: normal;
@@ -75,8 +95,9 @@ h3 {
 }
 
 .design-archives {
-    h3 { display: none; 
-    background-color: red;
+    h3 {
+        display: none;
+        background-color: red;
     }
 }
 
@@ -84,6 +105,7 @@ h3 {
 // Medium & Wide
 // ----------------------------------- 
 @media (min-width: 30em) {
+
     // grid 1
     .intro {
         display: grid;
@@ -163,6 +185,7 @@ h3 {
 
     .design-selection nav ul {
         display: block;
+
         li {
             float: left;
             width: 50%;
@@ -182,6 +205,7 @@ h3 {
     }
 
 }
+
 // -----------------------------------
 // Wide
 // ----------------------------------- 
